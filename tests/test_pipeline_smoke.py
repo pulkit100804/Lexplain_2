@@ -176,6 +176,8 @@ def test_argument_package_structure(pipeline_output):
     assert "arguments" in ap
     assert "viability_assessment" in ap
     assert "provenance" in ap
+    # role_requested must match what was passed to agent_10 ('both')
+    assert ap["role_requested"] == "both", f"Expected role_requested='both', got {ap.get('role_requested')}"
     # Must have at least one argument (fallback or Gemini)
     assert len(ap["arguments"]) > 0
     for arg in ap["arguments"]:

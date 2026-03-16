@@ -65,7 +65,8 @@ def evaluate_ingredients_v1(
     kb = _load_kb()
     kb_by_section = {entry["section_id"]: entry for entry in kb}
 
-    all_text = " ".join(n["text"] for n in fact_graph.get("nodes", []))
+    # Use .get() to guard against nodes missing 'text'
+    all_text = " ".join(n.get("text", "") for n in fact_graph.get("nodes", []))
     results: List[Dict[str, Any]] = []
 
     for candidate in statute_candidates.get("candidates", []):

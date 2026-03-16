@@ -19,6 +19,9 @@ _ABBREVS = {
     r"\bp\.a\.": "per annum",
 }
 
+# NOTE: This heuristic splits on ". " followed by an uppercase letter.
+# Known limitation: it may incorrectly split "IPC. 420" or "Sec. 302".
+# For production use, integrate a domain-specific tokenizer (e.g., spaCy legal model).
 _SPLIT_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z])")
 
 

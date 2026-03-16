@@ -68,8 +68,8 @@ def identify_statutes_v1(
     with open(fact_graph_path, "r", encoding="utf-8") as f:
         fact_graph = json.load(f)
 
-    # Collect all text
-    all_text = " ".join(n["text"].lower() for n in fact_graph["nodes"])
+    # Collect all text; use .get() to guard against nodes missing 'text'
+    all_text = " ".join(n.get("text", "").lower() for n in fact_graph.get("nodes", []))
 
     candidates: List[Dict[str, Any]] = []
     for rule in _STATUTE_RULES:

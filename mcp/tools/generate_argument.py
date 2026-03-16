@@ -156,8 +156,11 @@ def generate_argument_v1(
     # Parse Gemini response or use fallback
     arguments: List[Dict[str, Any]] = []
     if llm_used and raw_gemini_text:
-        # Try to extract JSON from Gemini's response
-        json_match = re.search(r'\{[\s\S]*?\}', raw_gemini_text)
+        # Try to extract JSON from Gemini's response.
+        # Limitation: greedy match to capture the outermost JSON object; nested
+        # objects are handled by json.loads. If Gemini returns multiple top-level
+        # objects only the first is used — see fallback branch below for resilience.
+        json_match = re.search(r'\{[\s\S]*\}', raw_gemini_text)
         if json_match:
             try:
                 parsed = json.loads(json_match.group())

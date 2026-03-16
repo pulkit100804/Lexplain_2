@@ -13,6 +13,9 @@ from typing import Any, Dict, List
 
 from utils.provenance import make_provenance
 
+# NOTE: This regex matches common date formats but does NOT validate calendar
+# correctness (e.g., "February 30" would match). Date extraction here is used
+# for indexing only; downstream agents should validate dates if needed.
 _DATE_RE = re.compile(
     r"\b(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{4}[/-]\d{1,2}[/-]\d{1,2}|"
     r"(?:January|February|March|April|May|June|July|August|September|October|November|December)"
