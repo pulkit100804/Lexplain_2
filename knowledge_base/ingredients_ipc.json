@@ -1,0 +1,108 @@
+[
+  {
+    "section_id": "IPC_420",
+    "name": "Cheating and dishonestly inducing delivery of property",
+    "section_type": "substantive",
+    "ingredients": [
+      {
+        "ingredient_id": "IPC_420_I1",
+        "name": "deceptive_act",
+        "description": "The accused made a false or deceptive representation",
+        "match_patterns": ["fraud", "cheat", "deceiv", "misrepresent", "false representation"],
+        "weight": 0.4
+      },
+      {
+        "ingredient_id": "IPC_420_I2",
+        "name": "dishonest_intention",
+        "description": "The accused had dishonest intention at the time",
+        "match_patterns": ["dishonest", "fraudulent", "intentionally", "knowingly"],
+        "weight": 0.35
+      },
+      {
+        "ingredient_id": "IPC_420_I3",
+        "name": "induced_delivery",
+        "description": "The victim was induced to deliver property or sign valuable security",
+        "match_patterns": ["deliver", "transfer", "payment", "sign", "property"],
+        "weight": 0.25
+      }
+    ],
+    "match_patterns": ["cheat", "fraud", "dishonest"],
+    "weight": 1.0
+  },
+  {
+    "section_id": "IPC_506",
+    "name": "Punishment for criminal intimidation",
+    "section_type": "substantive",
+    "ingredients": [
+      {
+        "ingredient_id": "IPC_506_I1",
+        "name": "threat_made",
+        "description": "The accused made a threat to the victim",
+        "match_patterns": ["threat", "threaten", "intimidat", "menace"],
+        "weight": 0.5
+      },
+      {
+        "ingredient_id": "IPC_506_I2",
+        "name": "intent_to_cause_alarm",
+        "description": "The threat was intended to cause alarm or compel an act",
+        "match_patterns": ["alarm", "fear", "coerce", "compel", "frighten"],
+        "weight": 0.5
+      }
+    ],
+    "match_patterns": ["threat", "intimidat"],
+    "weight": 1.0
+  },
+  {
+    "section_id": "IPC_302",
+    "name": "Punishment for murder",
+    "section_type": "substantive",
+    "ingredients": [
+      {
+        "ingredient_id": "IPC_302_I1",
+        "name": "causing_death",
+        "description": "The accused caused the death of a human being",
+        "match_patterns": ["death", "killed", "murder", "deceased", "died"],
+        "weight": 0.4
+      },
+      {
+        "ingredient_id": "IPC_302_I2",
+        "name": "intention_or_knowledge",
+        "description": "The act was done with intention or knowledge of likely death",
+        "match_patterns": ["intentionally", "deliberately", "knowingly", "premeditated"],
+        "weight": 0.35
+      },
+      {
+        "ingredient_id": "IPC_302_I3",
+        "name": "human_being",
+        "description": "The victim was a human being",
+        "match_patterns": ["victim", "deceased", "person", "individual"],
+        "weight": 0.25
+      }
+    ],
+    "match_patterns": ["murder", "killed", "death"],
+    "weight": 1.0
+  },
+  {
+    "section_id": "IPC_379",
+    "name": "Punishment for theft",
+    "section_type": "substantive",
+    "ingredients": [
+      {
+        "ingredient_id": "IPC_379_I1",
+        "name": "dishonest_taking",
+        "description": "The accused dishonestly took movable property",
+        "match_patterns": ["stole", "stolen", "theft", "took", "took away"],
+        "weight": 0.5
+      },
+      {
+        "ingredient_id": "IPC_379_I2",
+        "name": "out_of_possession",
+        "description": "The property was taken out of possession of another person",
+        "match_patterns": ["possession", "property", "belonging", "owned"],
+        "weight": 0.5
+      }
+    ],
+    "match_patterns": ["theft", "stole", "stolen"],
+    "weight": 1.0
+  }
+]
