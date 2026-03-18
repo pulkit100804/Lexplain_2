@@ -1,0 +1,153 @@
+{
+  "case_id": "case_65569549d020",
+  "tenant_id": "local_dev",
+  "nodes": [
+    {
+      "node_id": "n0000",
+      "text": "On the evening of 5th January, Arjun was seen leaving a restaurant with his colleague Vivek after a heated argument regarding money.",
+      "page_no": 0,
+      "span": [
+        0,
+        132
+      ],
+      "role_tag": "fact",
+      "confidence": 0.9,
+      "matched_keyword": "on"
+    },
+    {
+      "node_id": "n0001",
+      "text": "CCTV footage from outside the restaurant shows both of them walking towards Vivek’s car at around 9:15 PM.",
+      "page_no": 0,
+      "span": [
+        133,
+        239
+      ],
+      "role_tag": "fact",
+      "confidence": 0.9,
+      "matched_keyword": "at"
+    },
+    {
+      "node_id": "n0002",
+      "text": "The next morning, Vivek’s car was found abandoned near a highway on the outskirts of the city.",
+      "page_no": 0,
+      "span": [
+        241,
+        335
+      ],
+      "role_tag": "finding",
+      "confidence": 0.9,
+      "matched_keyword": "found"
+    },
+    {
+      "node_id": "n0003",
+      "text": "Later that day, Vivek’s dead body was discovered in a nearby forest area with signs of blunt force injury.",
+      "page_no": 0,
+      "span": [
+        336,
+        442
+      ],
+      "role_tag": "fact",
+      "confidence": 0.9,
+      "matched_keyword": "at"
+    },
+    {
+      "node_id": "n0004",
+      "text": "During investigation, it was found that Arjun had returned home late that night.",
+      "page_no": 0,
+      "span": [
+        444,
+        524
+      ],
+      "role_tag": "finding",
+      "confidence": 0.9,
+      "matched_keyword": "found"
+    },
+    {
+      "node_id": "n0005",
+      "text": "Witnesses in his neighborhood reported seeing him enter his house around midnight.",
+      "page_no": 0,
+      "span": [
+        525,
+        607
+      ],
+      "role_tag": "evidence",
+      "confidence": 0.9,
+      "matched_keyword": "witness"
+    },
+    {
+      "node_id": "n0006",
+      "text": "When questioned, Arjun failed to provide a clear explanation of his whereabouts between 9:30 PM and midnight.",
+      "page_no": 0,
+      "span": [
+        608,
+        717
+      ],
+      "role_tag": "fact",
+      "confidence": 0.9,
+      "matched_keyword": "on"
+    },
+    {
+      "node_id": "n0007",
+      "text": "A search of Arjun’s house led to the recovery of Vivek’s wristwatch and wallet from a drawer in his bedroom.",
+      "page_no": 0,
+      "span": [
+        719,
+        827
+      ],
+      "role_tag": "fact",
+      "confidence": 0.9,
+      "matched_keyword": "at"
+    },
+    {
+      "node_id": "n0008",
+      "text": "No eyewitness has seen the actual incident of violence.",
+      "page_no": 0,
+      "span": [
+        828,
+        883
+      ],
+      "role_tag": "evidence",
+      "confidence": 0.9,
+      "matched_keyword": "witness"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "evt_71e33be8",
+      "node_ids": [
+        "n0005"
+      ],
+      "event_type": "mentioned",
+      "actors": [
+        "witness"
+      ],
+      "objects": [],
+      "dates": []
+    },
+    {
+      "event_id": "evt_318269e9",
+      "node_ids": [
+        "n0008"
+      ],
+      "event_type": "mentioned",
+      "actors": [
+        "witness"
+      ],
+      "objects": [],
+      "dates": []
+    }
+  ],
+  "actors": [
+    "witness"
+  ],
+  "provenance": {
+    "trace_id": "e23c47e9-cffa-4483-a588-45f05b859eca",
+    "tool_name": "build_fact_graph_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-18T08:12:14.285301+00:00",
+    "input_refs": [
+      "cases\\case_65569549d020\\role_tagged_graph.json"
+    ]
+  }
+}

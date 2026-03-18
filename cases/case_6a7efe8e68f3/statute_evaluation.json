@@ -1,0 +1,1160 @@
+{
+  "case_id": "case_6a7efe8e68f3",
+  "tenant_id": "local_dev",
+  "statute_evaluations": [
+    {
+      "statute_id": "313",
+      "name": "Causing miscarriage without woman's consent.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "313.1",
+          "text": "Whoever commits the offence defined in the last preceding section",
+          "element_type": "act",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "313.2",
+          "text": "without the consent of the woman",
+          "element_type": "circumstance",
+          "required_types": [
+            "circumstance"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['circumstance'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "313.3",
+          "text": "whether the woman is quick with child or not",
+          "element_type": "circumstance",
+          "required_types": [
+            "circumstance"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['circumstance'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 3"
+    },
+    {
+      "statute_id": "355",
+      "name": "Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "355.1",
+          "text": "Whoever assaults or uses criminal force to any person",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "355.2",
+          "text": "intending thereby to dishonor that person",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "355.3",
+          "text": "otherwise than on grave and sudden provocation given by that person",
+          "element_type": "exception",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 3"
+    },
+    {
+      "statute_id": "452",
+      "name": "House-trespass after preparation for hurt, assault or wrongful restraint.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "452.1",
+          "text": "Whoever commits house-trespass",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "452.2",
+          "text": "having made preparation for causing hurt to any person",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "452.3",
+          "text": "having made preparation for assaulting any person",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "452.4",
+          "text": "having made preparation for wrongfully restraining any person",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "452.5",
+          "text": "having made preparation for putting any person in fear of hurt",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "452.6",
+          "text": "having made preparation for putting any person in fear of assault",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "452.7",
+          "text": "having made preparation for putting any person in fear of wrongful restraint",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 7"
+    },
+    {
+      "statute_id": "458",
+      "name": "Lurking house-trespass or house-breaking by night after preparation for hurt, assault, or wrongful restraint.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "458.1",
+          "text": "The accused made preparation for putting any person in fear of wrongful restraint.",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 1"
+    },
+    {
+      "statute_id": "489",
+      "name": "Tampering with property mark with intent to cause injury.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "489.1",
+          "text": "The accused knows it to be likely that he may thereby cause injury to any person",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 1"
+    },
+    {
+      "statute_id": "323",
+      "name": "Punishment for voluntarily causing hurt.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "323.1",
+          "text": "Whoever",
+          "element_type": "actor",
+          "required_types": [
+            "relationship"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['relationship'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "323.2",
+          "text": "except in the case provided for by section 334",
+          "element_type": "exception",
+          "required_types": [
+            "circumstance"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['circumstance'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "323.3",
+          "text": "voluntarily causes hurt",
+          "element_type": "act",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 3"
+    },
+    {
+      "statute_id": "460",
+      "name": "All persons jointly concerned in lurking house-trespass or house-breaking by night punishable where death or grievous hurt caused by one of them.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "460.1",
+          "text": "The offence committed is lurking house-trespass by night or house-breaking by night.",
+          "element_type": "act",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "460.2",
+          "text": "At the time of committing such offence, any person guilty of such offence voluntarily causes or attempts to cause death or grievous hurt to any person.",
+          "element_type": "consequence",
+          "required_types": [
+            "action",
+            "mental_state",
+            "result"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'mental_state', 'result'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "460.3",
+          "text": "The person being punished is jointly concerned in committing such lurking house-trespass by night or house-breaking by night.",
+          "element_type": "participation",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 3"
+    },
+    {
+      "statute_id": "424",
+      "name": "Dishonest or fraudulent removal or concealment of property.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "424.1",
+          "text": "A person dishonestly or fraudulently conceals any property of himself or any other person.",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action",
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "424.2",
+          "text": "A person dishonestly or fraudulently removes any property of himself or any other person.",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action",
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "424.3",
+          "text": "A person dishonestly or fraudulently assists in the concealment of property.",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action",
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "424.4",
+          "text": "A person dishonestly or fraudulently assists in the removal of property.",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action",
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "424.5",
+          "text": "A person dishonestly releases any demand or claim to which he is entitled.",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 5"
+    },
+    {
+      "statute_id": "403",
+      "name": "Dishonest misappropriation of property.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "403.1",
+          "text": "Whoever dishonestly misappropriates any movable property.",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action",
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "403.2",
+          "text": "Whoever dishonestly converts to his own use any movable property.",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action",
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "403.3",
+          "text": "A dishonest misappropriation for a time only is a misappropriation.",
+          "element_type": "condition",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "403.4",
+          "text": "A person finds property not in the possession of any other person.",
+          "element_type": "condition",
+          "required_types": [
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "403.5",
+          "text": "The finder takes such property for the purpose of protecting it for, or of restoring it to, the owner, and does not take or misappropriate it dishonestly.",
+          "element_type": "exception",
+          "required_types": [
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "403.6",
+          "text": "The finder appropriates the found property to his own use.",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action",
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "403.7",
+          "text": "At the time of appropriation, the finder has not kept the property a reasonable time to enable the owner to claim it.",
+          "element_type": "condition",
+          "required_types": [
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "403.8",
+          "text": "At the time of appropriating found property, the finder does not believe it to be his own property.",
+          "element_type": "mens_rea",
+          "required_types": [
+            "possession",
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['possession', 'mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "403.9",
+          "text": "At the time of appropriating found property, the finder does not in good faith believe that the real owner cannot be found.",
+          "element_type": "mens_rea",
+          "required_types": [
+            "possession",
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['possession', 'mental_state'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 9"
+    },
+    {
+      "statute_id": "404",
+      "name": "Dishonest misappropriation of property possessed by deceased person at the time of his death.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "404.1",
+          "text": "Whoever dishonestly misappropriates or converts to his own use property",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action",
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "404.2",
+          "text": "knowing that such property was in the possession of a deceased person at the time of that person's decease",
+          "element_type": "mens_rea",
+          "required_types": [
+            "possession",
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['possession', 'mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "404.3",
+          "text": "and has not since been in the possession of any person legally entitled to such possession",
+          "element_type": "condition",
+          "required_types": [
+            "possession"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['possession'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "404.4",
+          "text": "if the offender at the time of such person's decease was employed by him as a clerk or servant",
+          "element_type": "aggravating_factor",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 4"
+    },
+    {
+      "statute_id": "300",
+      "name": "Murder.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "300.1",
+          "text": "the act by which the death is caused is done with the intention of causing death",
+          "element_type": "condition",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "300.2",
+          "text": "the act is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused",
+          "element_type": "condition",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "300.3",
+          "text": "the act is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death",
+          "element_type": "condition",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "300.4",
+          "text": "the person committing the act knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury",
+          "element_type": "condition",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 4"
+    },
+    {
+      "statute_id": "396",
+      "name": "Dacoity with murder.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "396.1",
+          "text": "Any one of these persons commits murder.",
+          "element_type": "action",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 1"
+    },
+    {
+      "statute_id": "299",
+      "name": "Culpable homicide.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "299.1",
+          "text": "Whoever causes death.",
+          "element_type": "actus_reus",
+          "required_types": [
+            "result",
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['result', 'action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "299.2",
+          "text": "The act is done with the intention of causing death.",
+          "element_type": "mens_rea",
+          "required_types": [
+            "action",
+            "mental_state",
+            "result"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'mental_state', 'result'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "299.3",
+          "text": "The act is done with the intention of causing such bodily injury as is likely to cause death.",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "299.4",
+          "text": "The act is done with the knowledge that he is likely by such act to cause death.",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "299.5",
+          "text": "A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death.",
+          "element_type": "causation_condition",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "299.6",
+          "text": "Where death is caused by bodily injury, the person who causes such bodily injury shall be deemed to have caused the death, although by resorting to proper remedies and skilful treatment the death might have been prevented.",
+          "element_type": "causation_condition",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "299.7",
+          "text": "The causing of the death of a child in the mother's womb is not homicide.",
+          "element_type": "exclusion_condition",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "299.8",
+          "text": "It may amount to culpable homicide to cause the death of a living child, if any part of that child has been brought forth, though the child may not have breathed or been completely born.",
+          "element_type": "inclusion_condition",
+          "required_types": [
+            "result",
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['result', 'action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 8"
+    },
+    {
+      "statute_id": "303",
+      "name": "Punishment for murder by life-convict.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "303.1",
+          "text": "Whoever, being under sentence of imprisonment for life",
+          "element_type": "perpetrator_status",
+          "required_types": [
+            "circumstance"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['circumstance'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "303.2",
+          "text": "commits murder",
+          "element_type": "act",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 2"
+    },
+    {
+      "statute_id": "306",
+      "name": "Abetment of suicide.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "306.1",
+          "text": "any person commits suicide",
+          "element_type": "condition",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "306.2",
+          "text": "whoever abets the commission of such suicide",
+          "element_type": "actus_reus",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 2"
+    },
+    {
+      "statute_id": "307",
+      "name": "Attempt to murder.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "307.1",
+          "text": "Whoever does any act",
+          "element_type": "act",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "307.2",
+          "text": "with such intention or knowledge",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "307.3",
+          "text": "and under such circumstances that, if he by that act caused death, he would be guilty of murder",
+          "element_type": "circumstance",
+          "required_types": [
+            "circumstance"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['circumstance'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "307.4",
+          "text": "if hurt is caused to any person by such act",
+          "element_type": "condition_for_enhanced_punishment",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "307.5",
+          "text": "When any person offending under this section is under sentence of imprisonment for life",
+          "element_type": "condition_for_enhanced_punishment",
+          "required_types": [
+            "relationship"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['relationship'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "307.6",
+          "text": "if hurt is caused (by a life-convict)",
+          "element_type": "condition_for_enhanced_punishment",
+          "required_types": [
+            "result"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['result'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 6"
+    },
+    {
+      "statute_id": "316",
+      "name": "Causing death of quick unborn child by act amounting to culpable homicide.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "316.1",
+          "text": "Whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide",
+          "element_type": "actus_reus",
+          "required_types": [
+            "result",
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['result', 'action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "316.2",
+          "text": "and does by such act cause the death of a quick unborn child",
+          "element_type": "causation",
+          "required_types": [
+            "action",
+            "result"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action', 'result'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 2"
+    },
+    {
+      "statute_id": "301",
+      "name": "Culpable homicide by causing death of person other than person whose death was intended.",
+      "score": 1.0583333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "301.1",
+          "text": "A person does something which he intends or knows to be likely to cause death.",
+          "element_type": "actus_reus_and_mens_rea",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "301.2",
+          "text": "The act commits culpable homicide by causing the death of any person.",
+          "element_type": "result",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "301.3",
+          "text": "The person whose death is caused is neither the person whose death the offender intended nor knew himself to be likely to cause.",
+          "element_type": "circumstance",
+          "required_types": [
+            "circumstance"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['circumstance'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "301.4",
+          "text": "The culpable homicide committed by the offender is of the description of which it would have been if he had caused the death of the person whose death he intended or knew himself to be likely to cause.",
+          "element_type": "legal_consequence",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 4"
+    },
+    {
+      "statute_id": "304B",
+      "name": "Dowry death.",
+      "score": 0.9333333333333333,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "304B.1",
+          "text": "the death of a woman is caused by any burns or bodily injury",
+          "element_type": "causal_circumstance",
+          "required_types": [
+            "result"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['result'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "304B.2",
+          "text": "the death of a woman occurs otherwise than under normal circumstances",
+          "element_type": "circumstance",
+          "required_types": [
+            "circumstance"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['circumstance'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "304B.3",
+          "text": "the death occurs within seven years of her marriage",
+          "element_type": "temporal_condition",
+          "required_types": [
+            "result"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['result'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "304B.4",
+          "text": "soon before her death she was subjected to cruelty or harassment",
+          "element_type": "conduct",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "304B.5",
+          "text": "cruelty or harassment by her husband",
+          "element_type": "actor",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "304B.6",
+          "text": "cruelty or harassment by any relative of her husband",
+          "element_type": "actor",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "304B.7",
+          "text": "cruelty or harassment for, or in connection with, any demand for dowry",
+          "element_type": "motive",
+          "required_types": [
+            "action"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['action'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "304B.8",
+          "text": "dowry shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961 (28 of 1961)",
+          "element_type": "definition",
+          "required_types": [],
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No required signal types identified.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 7, not satisfied: 1"
+    },
+    {
+      "statute_id": "314",
+      "name": "Death caused by act done with intent to cause miscarriage.",
+      "score": 0.7250333333333333,
+      "confidence": "medium",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "314.1",
+          "text": "The offender must have the intent to cause the miscarriage of a woman with child.",
+          "element_type": "mens_rea",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "314.2",
+          "text": "It is not essential that the offender should know that the act is likely to cause death.",
+          "element_type": "mens_rea_clarification",
+          "required_types": [],
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No required signal types identified.",
+          "source": "generic_inference"
+        },
+        {
+          "ingredient_id": "314.3",
+          "text": "The act is done without the consent of the woman.",
+          "element_type": "aggravating_circumstance",
+          "required_types": [
+            "mental_state"
+          ],
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Direct evidence: All required types ['mental_state'] are present.",
+          "source": "generic_inference"
+        }
+      ],
+      "overall_reasoning": "Abstract matching: satisfied: 2, not satisfied: 1"
+    }
+  ],
+  "evaluation_count": 20,
+  "provenance": {
+    "trace_id": "7474d992-5e43-43a7-9c39-a187a9d3c4c7",
+    "tool_name": "evaluate_statute_ingredients_v1",
+    "tool_version": "2.0.0",
+    "model_version": "gemini-2.5-flash",
+    "timestamp": "2026-03-18T07:24:30.153954+00:00",
+    "input_refs": [
+      "cases\\case_6a7efe8e68f3\\legal_signal_graph.json"
+    ]
+  }
+}

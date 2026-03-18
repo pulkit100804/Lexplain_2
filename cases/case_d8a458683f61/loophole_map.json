@@ -1,0 +1,19 @@
+{
+  "case_id": "case_d8a458683f61",
+  "tenant_id": "local_dev",
+  "missing_evidence": [],
+  "contradictory_nodes": [],
+  "weak_ingredients": [],
+  "recommended_next_actions": [],
+  "provenance": {
+    "trace_id": "0ed13c3a-0231-435b-971f-004a7117a986",
+    "tool_name": "mine_loopholes_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-17T20:17:30.301620+00:00",
+    "input_refs": [
+      "cases\\case_d8a458683f61\\ingredient_report.json",
+      "cases\\case_d8a458683f61\\role_tagged_graph.json"
+    ]
+  }
+}

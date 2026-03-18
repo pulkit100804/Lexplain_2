@@ -1,0 +1,1025 @@
+{
+  "case_id": "case_f3f51f390d35",
+  "tenant_id": "local_dev",
+  "statute_evaluations": [
+    {
+      "statute_id": "417",
+      "name": "Punishment for cheating.",
+      "score": 1.0,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "417.1",
+          "text": "Whoever cheats",
+          "element_type": "act",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job. Ram intentionally tricked the complainant and ran away with the money. (signal: deception_for_gain)",
+          "source": "llm"
+        }
+      ],
+      "overall_reasoning": "The case facts explicitly state that the accused cheated the complainant, directly satisfying the core ingredient of this section."
+    },
+    {
+      "statute_id": "418",
+      "name": "Cheating with knowledge that wrongful loss may ensue to person whose interest offender is bound to protect.",
+      "score": 0.75,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "418.1",
+          "text": "Whoever cheats",
+          "element_type": "act",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job. Ram intentionally tricked the complainant and ran away with the money.",
+          "source": "llm"
+        },
+        {
+          "ingredient_id": "418.2",
+          "text": "with the knowledge that he is likely thereby to cause wrongful loss",
+          "element_type": "mens_rea",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Ram intentionally tricked the complainant and ran away with the money, implying knowledge of causing wrongful loss.",
+          "source": "llm"
+        },
+        {
+          "ingredient_id": "418.3",
+          "text": "to a person whose interest in the transaction to which the cheating relates",
+          "element_type": "victim",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "The complainant was the person whose interest in the transaction (getting a job for money) was affected by the cheating.",
+          "source": "llm"
+        },
+        {
+          "ingredient_id": "418.4",
+          "text": "he was bound, either by law, or by a legal contract, to protect",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 1.0,
+          "evidence": "No evidence in the case facts that Ram was bound by law or legal contract to protect the complainant's interest.",
+          "source": "llm"
+        }
+      ],
+      "overall_reasoning": "While cheating and knowledge of wrongful loss are present, there is no evidence that the accused was bound to protect the complainant's interests."
+    },
+    {
+      "statute_id": "420",
+      "name": "Cheating and dishonestly inducing delivery of property.",
+      "score": 0.0833,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "420.1",
+          "text": "Whoever cheats",
+          "element_type": "act_element",
+          "status": "partially_inferred",
+          "confidence": 0.5,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "420.2",
+          "text": "dishonestly",
+          "element_type": "mental_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "420.3",
+          "text": "induces the person deceived",
+          "element_type": "act_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "420.4",
+          "text": "to deliver any property to any person",
+          "element_type": "consequence_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "420.5",
+          "text": "to make, alter or destroy the whole or any part of a valuable security",
+          "element_type": "consequence_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "420.6",
+          "text": "to make, alter or destroy anything which is signed or sealed, and which is capable of being converted into a valuable security",
+          "element_type": "consequence_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "partially inferred: 420.1; not satisfied: 420.2, 420.3, 420.4, 420.5, 420.6"
+    },
+    {
+      "statute_id": "209",
+      "name": "Dishonestly making false claim in Court.",
+      "score": 0.0714,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "209.1",
+          "text": "Whoever fraudulently",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "209.2",
+          "text": "or dishonestly",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "209.3",
+          "text": "or with intent to injure any person",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "209.4",
+          "text": "or with intent to annoy any person",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "209.5",
+          "text": "makes in a Court of Justice",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "209.6",
+          "text": "any claim",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "209.7",
+          "text": "which he knows to be false",
+          "element_type": "mens_rea",
+          "status": "partially_inferred",
+          "confidence": 0.5,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "partially inferred: 209.7; not satisfied: 209.1, 209.2, 209.3, 209.4, 209.5, 209.6"
+    },
+    {
+      "statute_id": "415",
+      "name": "Cheating.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "415.1",
+          "text": "Whoever, by deceiving any person",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "415.2",
+          "text": "fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "415.3",
+          "text": "intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0625,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "415.4",
+          "text": "A dishonest concealment of facts is a deception within the meaning of this section.",
+          "element_type": "definition",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 415.1, 415.2, 415.3, 415.4"
+    },
+    {
+      "statute_id": "424",
+      "name": "Dishonest or fraudulent removal or concealment of property.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "424.1",
+          "text": "A person dishonestly or fraudulently conceals any property of himself or any other person.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "424.2",
+          "text": "A person dishonestly or fraudulently removes any property of himself or any other person.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "424.3",
+          "text": "A person dishonestly or fraudulently assists in the concealment of property.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "424.4",
+          "text": "A person dishonestly or fraudulently assists in the removal of property.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "424.5",
+          "text": "A person dishonestly releases any demand or claim to which he is entitled.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 424.1, 424.2, 424.3, 424.4, 424.5"
+    },
+    {
+      "statute_id": "210",
+      "name": "Fraudulently obtaining decree for sum not due.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "210.1",
+          "text": "Whoever fraudulently obtains a decree or order against any person for a sum not due",
+          "element_type": "offence_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "210.2",
+          "text": "Whoever fraudulently obtains a decree or order against any person for a larger sum than is due",
+          "element_type": "offence_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "210.3",
+          "text": "Whoever fraudulently obtains a decree or order against any person for any property or interest in property to which he is not entitled",
+          "element_type": "offence_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "210.4",
+          "text": "Whoever fraudulently causes a decree or order to be executed against any person after it has been satisfied",
+          "element_type": "offence_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "210.5",
+          "text": "Whoever fraudulently causes a decree or order to be executed against any person for anything in respect of which it has been satisfied",
+          "element_type": "offence_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "210.6",
+          "text": "Whoever fraudulently suffers or permits any such act to be done in his name",
+          "element_type": "offence_element",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 210.1, 210.2, 210.3, 210.4, 210.5, 210.6"
+    },
+    {
+      "statute_id": "265",
+      "name": "Fraudulent use of false weight or measure.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "265.1",
+          "text": "Whoever, fraudulently uses any false weight or false measure of length or capacity",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.1111,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "265.2",
+          "text": "or fraudulently uses any weight or any measure of length or capacity as a different weight or measure from what it is",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 265.1, 265.2"
+    },
+    {
+      "statute_id": "421",
+      "name": "Dishonest or fraudulent removal or concealment of property to prevent distribution among creditor.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "421.1",
+          "text": "A person dishonestly or fraudulently removes any property.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "421.2",
+          "text": "A person dishonestly or fraudulently conceals any property.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "421.3",
+          "text": "A person dishonestly or fraudulently delivers any property to any person.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "421.4",
+          "text": "A person dishonestly or fraudulently transfers any property to any person without adequate consideration.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "421.5",
+          "text": "A person dishonestly or fraudulently causes any property to be transferred to any person without adequate consideration.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "421.6",
+          "text": "The person intends to prevent the distribution of that property according to law among his creditors or the creditors of any other person.",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "421.7",
+          "text": "The person knows it is likely that the action will thereby prevent the distribution of that property according to law among his creditors or the creditors of any other person.",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 421.1, 421.2, 421.3, 421.4, 421.5, 421.6, 421.7"
+    },
+    {
+      "statute_id": "423",
+      "name": "Dishonest or fraudulent execution of deed of transfer containing false statement of consideration.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "423.1",
+          "text": "The accused dishonestly or fraudulently signs, executes or becomes a party to any deed or instrument.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.1,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "423.2",
+          "text": "The deed or instrument purports to transfer or subject to any charge any property, or any interest therein.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "423.3",
+          "text": "The deed or instrument contains any false statement relating to the consideration for such transfer or charge.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.1,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "423.4",
+          "text": "The deed or instrument contains any false statement relating to the person or persons for whose use or benefit it is really intended to operate.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0714,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 423.1, 423.2, 423.3, 423.4"
+    },
+    {
+      "statute_id": "477A",
+      "name": "Falsification of accounts.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "477A.1",
+          "text": "Whoever, being a clerk, officer or servant, or employed or acting in the capacity of a clerk, officer or servant",
+          "element_type": "actor",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "477A.2",
+          "text": "wilfully, and with intent to defraud",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "477A.3",
+          "text": "destroys, alters, mutilates or falsifies any book, electronic record, paper, writing, valuable security or account",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "477A.4",
+          "text": "which belongs to or is in the possession of his employer, or has been received by him for or on behalf of his employer",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.1667,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "477A.5",
+          "text": "makes or abets the making of any false entry in, or omits or alters or abets the omission or alteration of any material particular from or in. any such book, electronic record, paper, writing, valuable security or account",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.1,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 477A.1, 477A.2, 477A.3, 477A.4, 477A.5"
+    },
+    {
+      "statute_id": "403",
+      "name": "Dishonest misappropriation of property.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "403.1",
+          "text": "Whoever dishonestly misappropriates any movable property.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "403.2",
+          "text": "Whoever dishonestly converts to his own use any movable property.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "403.3",
+          "text": "A dishonest misappropriation for a time only is a misappropriation.",
+          "element_type": "condition",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "403.4",
+          "text": "A person finds property not in the possession of any other person.",
+          "element_type": "condition",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "403.5",
+          "text": "The finder takes such property for the purpose of protecting it for, or of restoring it to, the owner, and does not take or misappropriate it dishonestly.",
+          "element_type": "exception",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "403.6",
+          "text": "The finder appropriates the found property to his own use.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "403.7",
+          "text": "At the time of appropriation, the finder has not kept the property a reasonable time to enable the owner to claim it.",
+          "element_type": "condition",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "403.8",
+          "text": "At the time of appropriating found property, the finder does not believe it to be his own property.",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "403.9",
+          "text": "At the time of appropriating found property, the finder does not in good faith believe that the real owner cannot be found.",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 403.1, 403.2, 403.3, 403.4, 403.5, 403.6, 403.7, 403.8, 403.9"
+    },
+    {
+      "statute_id": "404",
+      "name": "Dishonest misappropriation of property possessed by deceased person at the time of his death.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "404.1",
+          "text": "Whoever dishonestly misappropriates or converts to his own use property",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "404.2",
+          "text": "knowing that such property was in the possession of a deceased person at the time of that person's decease",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "404.3",
+          "text": "and has not since been in the possession of any person legally entitled to such possession",
+          "element_type": "condition",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "404.4",
+          "text": "if the offender at the time of such person's decease was employed by him as a clerk or servant",
+          "element_type": "aggravating_factor",
+          "status": "not_satisfied",
+          "confidence": 0.1111,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 404.1, 404.2, 404.3, 404.4"
+    },
+    {
+      "statute_id": "409",
+      "name": "Criminal breach of trust by public, servant. or by banker, merchant or agent.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "409.1",
+          "text": "The entrustment or dominion is in the capacity of a public servant, or in the way of business as a banker, merchant, factor, broker, attorney, or agent.",
+          "element_type": "status_element",
+          "status": "not_satisfied",
+          "confidence": 1.0,
+          "evidence": "No mention of Ram's capacity as a public servant, banker, merchant, factor, broker, attorney, or agent in the case facts.",
+          "source": "llm"
+        },
+        {
+          "ingredient_id": "409.2",
+          "text": "The accused commits criminal breach of trust in respect of that property.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 1.0,
+          "evidence": "Case facts describe cheating and running away with money, not an entrustment followed by a breach of trust in a specific capacity.",
+          "source": "llm"
+        }
+      ],
+      "overall_reasoning": "The case facts do not establish that the accused acted in any of the specific capacities required for criminal breach of trust under this section."
+    },
+    {
+      "statute_id": "416",
+      "name": "Cheating by personation.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "416.1",
+          "text": "The person cheats by pretending to be some other person.",
+          "element_type": "act",
+          "status": "not_satisfied",
+          "confidence": 1.0,
+          "evidence": "Case facts do not state that Ram pretended to be another person.",
+          "source": "llm"
+        },
+        {
+          "ingredient_id": "416.2",
+          "text": "The person cheats by knowingly substituting one person for another.",
+          "element_type": "act",
+          "status": "not_satisfied",
+          "confidence": 1.0,
+          "evidence": "Case facts do not state that Ram knowingly substituted one person for another.",
+          "source": "llm"
+        },
+        {
+          "ingredient_id": "416.3",
+          "text": "The person cheats by representing that he or any other person is a person other than he or such other person really is.",
+          "element_type": "act",
+          "status": "not_satisfied",
+          "confidence": 1.0,
+          "evidence": "Case facts do not state that Ram misrepresented his or another person's identity.",
+          "source": "llm"
+        },
+        {
+          "ingredient_id": "416.4",
+          "text": "The individual personated is a real or imaginary person.",
+          "element_type": "condition",
+          "status": "not_satisfied",
+          "confidence": 1.0,
+          "evidence": "No evidence of personation in the case facts.",
+          "source": "llm"
+        }
+      ],
+      "overall_reasoning": "The case facts describe general cheating, not cheating specifically by personation as defined by this section."
+    },
+    {
+      "statute_id": "468",
+      "name": "Forgery for purpose of cheating.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "468.1",
+          "text": "Whoever commits forgery",
+          "element_type": "act",
+          "status": "not_satisfied",
+          "confidence": 1.0,
+          "evidence": "No mention of forgery in the case facts.",
+          "source": "llm"
+        },
+        {
+          "ingredient_id": "468.2",
+          "text": "intending that the document or electronic record forged shall be used for the purpose of cheating",
+          "element_type": "intent",
+          "status": "not_satisfied",
+          "confidence": 1.0,
+          "evidence": "No evidence of forgery or intent related to a forged document in the case facts.",
+          "source": "llm"
+        }
+      ],
+      "overall_reasoning": "The case facts do not contain any mention of forgery, which is a prerequisite for this section."
+    },
+    {
+      "statute_id": "207",
+      "name": "Fraudulent claim to property to prevent its seizure as forfeited or in execution.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "207.1",
+          "text": "Whoever fraudulently accepts, receives or claims any property or any interest therein",
+          "element_type": "act",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "207.2",
+          "text": "knowing that he has no right or rightful claim to such property or interest",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "207.3",
+          "text": "or practices any deception touching any right to any property or any interest therein",
+          "element_type": "act",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "207.4",
+          "text": "intending thereby to prevent that property or interest therein from being taken as a forfeiture or in satisfaction of a fine",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "207.5",
+          "text": "under a sentence which has been pronounced, or which he knows to be likely to be pronounced by a Court of Justice or other competent authority",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "207.6",
+          "text": "or from being taken in execution of a decree or order which has been made, or which he knows to be likely to be made by a Court of Justice in a civil suit",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 207.1, 207.2, 207.3, 207.4, 207.5, 207.6"
+    },
+    {
+      "statute_id": "208",
+      "name": "Fraudulently suffering decree for sum not due.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "208.1",
+          "text": "The person causes or suffers a decree or order to be passed against them.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "208.2",
+          "text": "The decree or order is passed at the suit of any person.",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "208.3",
+          "text": "The decree or order is for a sum not due.",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "208.4",
+          "text": "The decree or order is for a larger sum than is due to such person.",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "208.5",
+          "text": "The decree or order is for any property or interest in property to which such person is not entitled.",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "208.6",
+          "text": "The person causes or suffers a decree or order to be executed against them.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "208.7",
+          "text": "The execution is for anything in respect of which the decree or order has been satisfied.",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 208.1, 208.2, 208.3, 208.4, 208.5, 208.6, 208.7"
+    },
+    {
+      "statute_id": "218",
+      "name": "Public servant framing incorrect record or writing with intent to save person from punishment or property from forfeiture.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "218.1",
+          "text": "The public servant is charged with the preparation of any record or other writing.",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "218.2",
+          "text": "The public servant frames that record or writing in a manner which he knows to be incorrect.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "218.3",
+          "text": "The public servant acts with intent to cause, or knowing it to be likely that he will thereby cause, loss or injury to the public or to any person.",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "218.4",
+          "text": "The public servant acts with intent thereby to save, or knowing it to be likely that he will thereby save, any person from legal punishment.",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "218.5",
+          "text": "The public servant acts with intent to save, or knowing that he is likely thereby to save, any property from forfeiture or other charge to which it is liable by law.",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 218.1, 218.2, 218.3, 218.4, 218.5"
+    },
+    {
+      "statute_id": "239",
+      "name": "Delivery of coin, possessed with knowledge that it is counterfeit.",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "239.1",
+          "text": "The accused delivers the counterfeit coin to any person.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.1667,
+          "evidence": "",
+          "source": "deterministic"
+        },
+        {
+          "ingredient_id": "239.2",
+          "text": "The accused attempts to induce any person to receive the counterfeit coin.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.125,
+          "evidence": "",
+          "source": "deterministic"
+        }
+      ],
+      "overall_reasoning": "not satisfied: 239.1, 239.2"
+    }
+  ],
+  "evaluation_count": 20,
+  "provenance": {
+    "trace_id": "b669112e-1b0f-43f7-aaed-b8a9627f1fb3",
+    "tool_name": "evaluate_statute_ingredients_v1",
+    "tool_version": "1.0.0",
+    "model_version": "gemini-2.5-flash",
+    "timestamp": "2026-03-18T06:10:45.909931+00:00",
+    "input_refs": [
+      "cases\\case_f3f51f390d35\\legal_signal_graph.json"
+    ]
+  }
+}

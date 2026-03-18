@@ -1,0 +1,17 @@
+{
+  "case_id": "case_47b01a5386ab",
+  "tenant_id": "local_dev",
+  "created_at": "2026-03-18T08:13:52.465613+00:00",
+  "char_count": 885,
+  "word_count": 147,
+  "provenance": {
+    "trace_id": "3d8f222c-81c8-4c09-b339-be1d4b00b4dc",
+    "tool_name": "agent_0_ingest",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-18T08:13:52.465582+00:00",
+    "input_refs": [
+      "stdin"
+    ]
+  }
+}

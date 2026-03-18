@@ -1,0 +1,582 @@
+{
+  "case_id": "case_5befe4851738",
+  "tenant_id": "local_dev",
+  "statute_evaluations": [
+    {
+      "statute_id": "419",
+      "name": "Punishment for cheating by personation.",
+      "ingredients": [
+        {
+          "ingredient_id": "419_kw",
+          "ingredient_text": "cheat",
+          "element_type": "keyword_proxy",
+          "final": {
+            "status": "satisfied",
+            "score": 1.0,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 1.0
+    },
+    {
+      "statute_id": "417",
+      "name": "Punishment for cheating.",
+      "ingredients": [
+        {
+          "ingredient_id": "417.1",
+          "ingredient_text": "Whoever cheats",
+          "element_type": "act",
+          "final": {
+            "status": "partial",
+            "score": 0.5,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.5
+    },
+    {
+      "statute_id": "414",
+      "name": "Assisting in concealment of stolen property.",
+      "ingredients": [
+        {
+          "ingredient_id": "414.1",
+          "ingredient_text": "Whoever voluntarily assists",
+          "element_type": "actus_reus",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "414.2",
+          "ingredient_text": "in concealing or disposing of or making away with property",
+          "element_type": "actus_reus",
+          "final": {
+            "status": "partial",
+            "score": 0.4,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "414.3",
+          "ingredient_text": "which he knows or has reason to believe",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "414.4",
+          "ingredient_text": "to be stolen property",
+          "element_type": "object_of_crime",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1
+    },
+    {
+      "statute_id": "209",
+      "name": "Dishonestly making false claim in Court.",
+      "ingredients": [
+        {
+          "ingredient_id": "209.1",
+          "ingredient_text": "Whoever fraudulently",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.2",
+          "ingredient_text": "or dishonestly",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.3",
+          "ingredient_text": "or with intent to injure any person",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.4",
+          "ingredient_text": "or with intent to annoy any person",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.5",
+          "ingredient_text": "makes in a Court of Justice",
+          "element_type": "actus_reus",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.6",
+          "ingredient_text": "any claim",
+          "element_type": "actus_reus",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.7",
+          "ingredient_text": "which he knows to be false",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "partial",
+            "score": 0.5,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.0714
+    },
+    {
+      "statute_id": "264",
+      "name": "Fraudulent use of false instrument for weighing.",
+      "ingredients": [
+        {
+          "ingredient_id": "264_kw",
+          "ingredient_text": "false",
+          "element_type": "keyword_proxy",
+          "final": {
+            "status": "satisfied",
+            "score": 1.0,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 1.0
+    },
+    {
+      "statute_id": "266",
+      "name": "Being In possession of false weight or measure.",
+      "ingredients": [
+        {
+          "ingredient_id": "266.1",
+          "ingredient_text": "The accused is in possession of an instrument for weighing, a weight, or a measure of length or capacity.",
+          "element_type": "actus_reus",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.125,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "266.2",
+          "ingredient_text": "The accused knows the instrument, weight, or measure to be false.",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "partial",
+            "score": 0.3333,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.2291
+    },
+    {
+      "statute_id": "399",
+      "name": "Making preparation to commit dacoity.",
+      "ingredients": [
+        {
+          "ingredient_id": "399.1",
+          "ingredient_text": "Whoever makes any preparation for committing dacoity",
+          "element_type": "actus_reus",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.0
+    },
+    {
+      "statute_id": "257",
+      "name": "Making or selling instrument for counterfeiting Government stamp.",
+      "ingredients": [
+        {
+          "ingredient_id": "257.1",
+          "ingredient_text": "The instrument is for the purpose of being used for counterfeiting any stamp issued by Government for the purpose of revenue.",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "257.2",
+          "ingredient_text": "The accused knows or has reason to believe that the instrument is intended to be used for the purpose of counterfeiting any stamp issued by Government for the purpose of revenue.",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0714,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.0357
+    },
+    {
+      "statute_id": "267",
+      "name": "Making or selling false weight or measure.",
+      "ingredients": [
+        {
+          "ingredient_id": "267.1",
+          "ingredient_text": "Whoever makes, sells or disposes of any instrument for weighing, or any weight, or any measure of length or capacity",
+          "element_type": "act",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "267.2",
+          "ingredient_text": "which he knows to be false",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "partial",
+            "score": 0.5,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "267.3",
+          "ingredient_text": "in order that the same may be used as true, or knowing that the same is likely to be used as true",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1667
+    },
+    {
+      "statute_id": "488",
+      "name": "Punishment for making use of any such false mark.",
+      "ingredients": [
+        {
+          "ingredient_id": "488.1",
+          "ingredient_text": "The use is in any manner prohibited by the last foregoing section.",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.0
+    },
+    {
+      "statute_id": "470",
+      "name": "Forged document.",
+      "ingredients": [
+        {
+          "ingredient_id": "470.1",
+          "ingredient_text": "A false document or electronic record",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.25,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "470.2",
+          "ingredient_text": "made wholly or in part by forgery",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.125
+    },
+    {
+      "statute_id": "182",
+      "name": "False information, with intent to cause public servant to use his lawful power to the injury of another person.",
+      "ingredients": [
+        {
+          "ingredient_id": "182.1",
+          "ingredient_text": "The accused gives information to any public servant.",
+          "element_type": "action",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1667,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "182.2",
+          "ingredient_text": "The information is false.",
+          "element_type": "circumstance",
+          "final": {
+            "status": "partial",
+            "score": 0.5,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "182.3",
+          "ingredient_text": "The accused knows or believes the information to be false.",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "partial",
+            "score": 0.4,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "182.4",
+          "ingredient_text": "The accused intends to cause the public servant to do or omit anything which such public servant ought not to do or omit if the true state of facts were known by him.",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1538,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "182.5",
+          "ingredient_text": "The accused knows it to be likely that the information will cause the public servant to do or omit anything which such public servant ought not to do or omit if the true state of facts were known by him.",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1333,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "182.6",
+          "ingredient_text": "The accused knows it to be likely that the information will cause the public servant to use their lawful power to the injury or annoyance of any person.",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0714,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.2375
+    },
+    {
+      "statute_id": "472",
+      "name": "Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 467.",
+      "ingredients": [
+        {
+          "ingredient_id": "472.1",
+          "ingredient_text": "The accused makes or counterfeits any seal, plate or other instrument for making an impression.",
+          "element_type": "act",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2222,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "472.2",
+          "ingredient_text": "The accused intends that the instrument shall be used for the purpose of committing any forgery.",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.125,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "472.3",
+          "ingredient_text": "The forgery would be punishable under section 467 of this Code.",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "472.4",
+          "ingredient_text": "The accused has in his possession any such seal, plate or other instrument.",
+          "element_type": "act",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1667,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "472.5",
+          "ingredient_text": "The possession is with the intent that the instrument shall be used for the purpose of committing any forgery.",
+          "element_type": "mens_rea",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1028
+    },
+    {
+      "statute_id": "174",
+      "name": "Non-attendance in obedience to an order from public servant.",
+      "ingredients": [
+        {
+          "ingredient_id": "174.1",
+          "ingredient_text": "The accused is legally bound to attend.",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.25,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "174.2",
+          "ingredient_text": "The attendance is in person or by an agent.",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "174.3",
+          "ingredient_text": "The attendance is at a certain place and time.",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "174.4",
+          "ingredient_text": "The attendance is in obedience to a summons, notice, order, or proclamation.",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "174.5",
+          "ingredient_text": "The summons, notice, order, or proclamation proceeds from a public servant.",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "174.6",
+          "ingredient_text": "The public servant is legally competent to issue the summons, notice, order, or proclamation.",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "174.7",
+          "ingredient_text": "The accused intentionally omits to attend at that place or time.",
+          "element_type": "actus_reus",
+          "final": {
+            "status": "partial",
+            "score": 0.3333,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "174.8",
+          "ingredient_text": "The departure occurs before the time at which it is lawful for him to depart.",
+          "element_type": "condition",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1667,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.0938
+    },
+    {
+      "statute_id": "260",
+      "name": "Using as genuine a Government stamp known to be counterfeit.",
+      "ingredients": [
+        {
+          "ingredient_id": "260.1",
+          "ingredient_text": "The accused uses a stamp as genuine.",
+          "element_type": "act_element",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.25,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "260.2",
+          "ingredient_text": "The stamp is a counterfeit of a stamp issued by the Government for the purpose of revenue.",
+          "element_type": "object_element",
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.125
+    }
+  ],
+  "provenance": {
+    "trace_id": "34898b11-2391-4855-a89a-e666c56d34a1",
+    "tool_name": "evaluate_ingredients_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-17T19:17:55.015847+00:00",
+    "input_refs": [
+      "cases\\case_5befe4851738\\statute_candidates.json",
+      "cases\\case_5befe4851738\\fact_event_graph.json"
+    ]
+  }
+}

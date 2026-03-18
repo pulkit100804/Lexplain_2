@@ -2,10 +2,10 @@
 Lexplain — MCP Tool: generate_argument_v1
 MIT License | See README for MCP provenance contract.
 
-Calls Gemini (via MCP's Gemini adapter) to generate role-conditioned legal arguments.
-Falls back to deterministic templating if Gemini is unavailable.
+Generates role-conditioned legal arguments using LLM validation.
+Falls back to deterministic templating if LLM is unavailable.
 
-Agents MUST NOT call Gemini directly — all Gemini access is through this tool via MCPClient.
+Agents MUST NOT call any LLM directly — use MCPClient only.
 """
 import json
 import os
@@ -26,10 +26,20 @@ def _build_fact_summary(fact_graph: Dict[str, Any], ingredient_report: Dict[str,
 
     satisfied = []
     violated = []
-    for ev in evaluations:
+    # Filter out not_applicable statutes
+    active_evaluations = [ev for ev in evaluations if ev.get("status") != "not_applicable"]
+    for ev in active_evaluations:
         for ing in ev.get("ingredients", []):
-            entry = {"statute": ev["statute_id"], "ingredient": ing["ingredient_id"], "score": ing["score"]}
-            if ing["status"] == "satisfied":
+            final = ing.get("final", {})
+            ing_status = final.get("status", ing.get("status", "not_satisfied"))
+            ing_score = final.get("score", ing.get("score", 0.0))
+            entry = {
+                "statute": ev["statute_id"],
+                "ingredient": ing.get("ingredient_id", "unknown"),
+                "score": ing_score,
+                "reasoning": ing.get("reasoning", ""),
+            }
+            if ing_status == "satisfied":
                 satisfied.append(entry)
             else:
                 violated.append(entry)
@@ -37,7 +47,11 @@ def _build_fact_summary(fact_graph: Dict[str, Any], ingredient_report: Dict[str,
     return {
         "events_summary": [{"event_type": e["event_type"], "actors": e["actors"]} for e in events],
         "key_actors": actors,
-        "statutes_triggered": [e["statute_id"] for e in evaluations],
+        "statutes_triggered": [e["statute_id"] for e in active_evaluations],
+        "charge_assessments": [
+            {"statute_id": e["statute_id"], "status": e.get("status", ""), "reason": e.get("reason", "")}
+            for e in active_evaluations
+        ],
         "satisfied_ingredients": satisfied[:15],
         "violated_ingredients": violated[:15],
     }
@@ -49,7 +63,7 @@ def _fallback_arguments(
     loophole_map: Dict[str, Any],
     role: str,
 ) -> List[Dict[str, Any]]:
-    """Template-based fallback when Gemini is not available."""
+    """Template-based fallback when LLM is not available."""
     statutes = fact_summary.get("statutes_triggered", [])
     satisfied = fact_summary.get("satisfied_ingredients", [])
     violated = fact_summary.get("violated_ingredients", [])
@@ -133,9 +147,9 @@ def generate_argument_v1(
     fact_summary = _build_fact_summary(fact_graph, ingredient_report)
     model_version: Optional[str] = None
     llm_used = False
-    raw_gemini_text = ""
+    raw_llm_text = ""
 
-    # Attempt Gemini call via MCP adapter
+    # Attempt LLM call via MCP adapter
     if _gemini_caller is not None:
         user_input = json.dumps({
             "case_id": case_id,
@@ -148,19 +162,16 @@ def generate_argument_v1(
             "role": role,
         }, ensure_ascii=False)
 
-        raw_gemini_text = _gemini_caller(_SYSTEM_PROMPT, user_input, temperature=0.2, max_tokens=2048)
-        if raw_gemini_text:
+        raw_llm_text = _gemini_caller(_SYSTEM_PROMPT, user_input, temperature=0.2, max_tokens=2048)
+        if raw_llm_text:
             llm_used = True
-            model_version = "gemini-1.5-flash"
+            model_version = "llm"
 
-    # Parse Gemini response or use fallback
+    # Parse LLM response or use fallback
     arguments: List[Dict[str, Any]] = []
-    if llm_used and raw_gemini_text:
-        # Try to extract JSON from Gemini's response.
-        # Limitation: greedy match to capture the outermost JSON object; nested
-        # objects are handled by json.loads. If Gemini returns multiple top-level
-        # objects only the first is used — see fallback branch below for resilience.
-        json_match = re.search(r'\{[\s\S]*\}', raw_gemini_text)
+    if llm_used and raw_llm_text:
+        # Try to extract JSON from LLM response.
+        json_match = re.search(r'\{[\s\S]*\}', raw_llm_text)
         if json_match:
             try:
                 parsed = json.loads(json_match.group())
@@ -168,11 +179,11 @@ def generate_argument_v1(
             except json.JSONDecodeError:
                 pass
         if not arguments:
-            # Wrap full Gemini text as a single argument
+            # Wrap full LLM text as a single argument
             arguments = [{
-                "id": "G1",
-                "title": "Gemini Legal Analysis",
-                "text": raw_gemini_text[:3000],
+                "id": "L1",
+                "title": "Legal Analysis",
+                "text": raw_llm_text[:3000],
                 "supporting_node_ids": [],
                 "precedent_ids": [],
                 "confidence": 0.75,
@@ -193,7 +204,7 @@ def generate_argument_v1(
     viability_assessment = {
         "prosecution_viability": prosecution_v,
         "defense_viability": defense_v,
-        "note": "Generated by Gemini" if llm_used else "Template fallback (Gemini unavailable or GEMINI_API_KEY not set)",
+        "note": "LLM-assisted analysis" if llm_used else "Template-based analysis",
     }
 
     argument_package = {
@@ -203,7 +214,7 @@ def generate_argument_v1(
         "llm_used": llm_used,
         "arguments": arguments,
         "viability_assessment": viability_assessment,
-        "raw_gemini_text": raw_gemini_text if llm_used else None,
+        "raw_llm_text": raw_llm_text if llm_used else None,
         "provenance": provenance,
     }
 

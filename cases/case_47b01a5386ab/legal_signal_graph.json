@@ -1,0 +1,19 @@
+{
+  "case_id": "case_47b01a5386ab",
+  "tenant_id": "local_dev",
+  "actors": [],
+  "events": [],
+  "legal_signals": [],
+  "candidate_sections": [],
+  "candidate_count": 0,
+  "provenance": {
+    "trace_id": "faa06615-c4e8-4e9d-a8d7-8365af13d2f5",
+    "tool_name": "extract_legal_signals_v1",
+    "tool_version": "1.0.0",
+    "model_version": "gemini-2.5-flash",
+    "timestamp": "2026-03-18T08:14:12.815703+00:00",
+    "input_refs": [
+      "cases\\case_47b01a5386ab\\fact_event_graph.json"
+    ]
+  }
+}

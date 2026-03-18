@@ -1,0 +1,56 @@
+{
+  "case_id": "case_9a3be138b82a",
+  "tenant_id": "local_dev",
+  "nodes": [
+    {
+      "node_id": "n0000",
+      "text": "Arjun and Vivek were seen drinking near the lake.",
+      "page_no": 0,
+      "span": [
+        0,
+        49
+      ]
+    },
+    {
+      "node_id": "n0001",
+      "text": "Vivek's body was found the next day with blunt force trauma.",
+      "page_no": 0,
+      "span": [
+        50,
+        110
+      ]
+    },
+    {
+      "node_id": "n0002",
+      "text": "Arjun was found with Vivek's watch and could not explain why he had it.",
+      "page_no": 0,
+      "span": [
+        111,
+        182
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from_node": "n0000",
+      "to_node": "n0001",
+      "edge_type": "adjacent"
+    },
+    {
+      "from_node": "n0001",
+      "to_node": "n0002",
+      "edge_type": "adjacent"
+    }
+  ],
+  "node_count": 3,
+  "provenance": {
+    "trace_id": "cf587a95-129c-4162-867c-2c2bd94d2060",
+    "tool_name": "extract_sentences_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-18T07:00:04.506136+00:00",
+    "input_refs": [
+      "cases\\case_9a3be138b82a\\normalized_text.txt"
+    ]
+  }
+}

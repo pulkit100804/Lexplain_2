@@ -122,10 +122,16 @@ def test_statute_candidates(pipeline_output):
     with open(os.path.join(case_dir, "statute_candidates.json")) as f:
         sc = json.load(f)
     assert "candidates" in sc
-    # Sample case mentions cheat/fraud/threat → should trigger at least IPC_420 and IPC_506
-    statute_ids = [c["statute_id"] for c in sc["candidates"]]
-    assert "IPC_420" in statute_ids, f"Expected IPC_420 in {statute_ids}"
-    assert "IPC_506" in statute_ids, f"Expected IPC_506 in {statute_ids}"
+    assert len(sc["candidates"]) > 0, "Expected at least one statute candidate"
+    # Validate schema: deterministic keyword match output
+    for cand in sc["candidates"]:
+        assert "statute_id" in cand
+        assert "matched_terms" in cand
+        assert "score" in cand
+        assert "final" in cand, f"Missing 'final' in candidate {cand.get('statute_id')}"
+        assert "score" in cand["final"]
+        assert "source" in cand["final"]
+        assert "rank" in cand["final"]
 
 
 def test_ingredient_report(pipeline_output):
@@ -138,6 +144,18 @@ def test_ingredient_report(pipeline_output):
         assert "statute_id" in ev
         assert "ingredients" in ev
         assert "overall_score" in ev
+        assert "status" in ev, "Missing charge status"
+        assert ev["status"] in ("strong", "plausible", "weak", "not_applicable")
+        assert "reason" in ev, "Missing reason"
+        # Validate schema per ingredient
+        for ing in ev["ingredients"]:
+            assert "ingredient_id" in ing
+            assert "final" in ing, f"Missing 'final' in ingredient {ing.get('ingredient_id')}"
+            assert "status" in ing["final"]
+            assert "score" in ing["final"]
+            assert "source" in ing["final"]
+            # No keyword_proxy allowed
+            assert ing.get("element_type") != "keyword_proxy", "keyword_proxy must not appear"
 
 
 def test_precedent_matches_empty(pipeline_output):

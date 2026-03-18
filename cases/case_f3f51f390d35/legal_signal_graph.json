@@ -1,0 +1,279 @@
+{
+  "case_id": "case_f3f51f390d35",
+  "tenant_id": "local_dev",
+  "actors": [
+    {
+      "id": "A1",
+      "name": "complainant",
+      "role": "complainant"
+    },
+    {
+      "id": "A2",
+      "name": "Ram",
+      "role": "accused"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E1",
+      "type": "cheating",
+      "description": "The complainant alleged that Ram cheated him of Rs 50,000.",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "object": "Rs 50,000",
+      "location": "",
+      "time": "",
+      "confidence": 1.0
+    },
+    {
+      "event_id": "E2",
+      "type": "false_promise",
+      "description": "Ram made false promises about a job.",
+      "actors": [
+        "A2"
+      ],
+      "object": "job",
+      "location": "",
+      "time": "",
+      "confidence": 1.0
+    },
+    {
+      "event_id": "E3",
+      "type": "deception",
+      "description": "Ram intentionally tricked the complainant.",
+      "actors": [
+        "A2",
+        "A1"
+      ],
+      "object": "",
+      "location": "",
+      "time": "",
+      "confidence": 1.0
+    },
+    {
+      "event_id": "E4",
+      "type": "misappropriation",
+      "description": "Ram ran away with the money (Rs 50,000).",
+      "actors": [
+        "A2"
+      ],
+      "object": "money (Rs 50,000)",
+      "location": "",
+      "time": "",
+      "confidence": 1.0
+    }
+  ],
+  "legal_signals": [
+    {
+      "signal": "deception_for_gain",
+      "source_event": "E1",
+      "confidence": 1.0
+    },
+    {
+      "signal": "misappropriation_of_property",
+      "source_event": "E4",
+      "confidence": 1.0
+    }
+  ],
+  "candidate_sections": [
+    {
+      "section_id": "415",
+      "heading": "Cheating.",
+      "offence_category": [
+        "fraud",
+        "deception",
+        "property_offence",
+        "harm"
+      ],
+      "relevance_score": 3
+    },
+    {
+      "section_id": "424",
+      "heading": "Dishonest or fraudulent removal or concealment of property.",
+      "offence_category": [
+        "property_offence",
+        "fraud",
+        "dishonesty"
+      ],
+      "relevance_score": 3
+    },
+    {
+      "section_id": "420",
+      "heading": "Cheating and dishonestly inducing delivery of property.",
+      "offence_category": [
+        "cheating",
+        "property_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "210",
+      "heading": "Fraudulently obtaining decree for sum not due.",
+      "offence_category": [
+        "fraud",
+        "property_offence",
+        "offence_against_justice"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "265",
+      "heading": "Fraudulent use of false weight or measure.",
+      "offence_category": [
+        "fraud",
+        "deception"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "421",
+      "heading": "Dishonest or fraudulent removal or concealment of property to prevent distribution among creditor.",
+      "offence_category": [
+        "property_offence",
+        "fraud"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "423",
+      "heading": "Dishonest or fraudulent execution of deed of transfer containing false statement of consideration.",
+      "offence_category": [
+        "property_offence",
+        "fraud"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "477A",
+      "heading": "Falsification of accounts.",
+      "offence_category": [
+        "fraud",
+        "falsification",
+        "property_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "403",
+      "heading": "Dishonest misappropriation of property.",
+      "offence_category": [
+        "property_offence",
+        "dishonesty_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "404",
+      "heading": "Dishonest misappropriation of property possessed by deceased person at the time of his death.",
+      "offence_category": [
+        "property_offence",
+        "dishonesty_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "409",
+      "heading": "Criminal breach of trust by public, servant. or by banker, merchant or agent.",
+      "offence_category": [
+        "property_offence",
+        "criminal_breach_of_trust"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "416",
+      "heading": "Cheating by personation.",
+      "offence_category": [
+        "cheating",
+        "personation"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "417",
+      "heading": "Punishment for cheating.",
+      "offence_category": [
+        "cheating"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "418",
+      "heading": "Cheating with knowledge that wrongful loss may ensue to person whose interest offender is bound to protect.",
+      "offence_category": [
+        "cheating"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "468",
+      "heading": "Forgery for purpose of cheating.",
+      "offence_category": [
+        "forgery",
+        "cheating"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "207",
+      "heading": "Fraudulent claim to property to prevent its seizure as forfeited or in execution.",
+      "offence_category": [
+        "fraud",
+        "property_crime",
+        "obstruction_of_justice"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "208",
+      "heading": "Fraudulently suffering decree for sum not due.",
+      "offence_category": [
+        "fraud",
+        "legal_proceedings"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "209",
+      "heading": "Dishonestly making false claim in Court.",
+      "offence_category": [
+        "fraud",
+        "false_statement",
+        "offences_against_public_justice"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "218",
+      "heading": "Public servant framing incorrect record or writing with intent to save person from punishment or property from forfeiture.",
+      "offence_category": [
+        "public_servant_misconduct",
+        "obstruction_of_justice",
+        "fraud"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "239",
+      "heading": "Delivery of coin, possessed with knowledge that it is counterfeit.",
+      "offence_category": [
+        "counterfeiting",
+        "fraud"
+      ],
+      "relevance_score": 1
+    }
+  ],
+  "candidate_count": 20,
+  "provenance": {
+    "trace_id": "b6f1c7a7-137e-41c5-ac7d-bbc9298b9f82",
+    "tool_name": "extract_legal_signals_v1",
+    "tool_version": "1.0.0",
+    "model_version": "gemini-2.5-flash",
+    "timestamp": "2026-03-18T06:09:40.266415+00:00",
+    "input_refs": [
+      "cases\\case_f3f51f390d35\\fact_event_graph.json"
+    ]
+  }
+}

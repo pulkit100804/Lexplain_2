@@ -1,0 +1,140 @@
+{
+  "case_id": "case_02714af89a9b",
+  "tenant_id": "local_dev",
+  "nodes": [
+    {
+      "node_id": "n0000",
+      "text": "On the evening of 5th January, Arjun was seen leaving a restaurant with his colleague Vivek after a heated argument regarding money.",
+      "page_no": 0,
+      "span": [
+        0,
+        132
+      ]
+    },
+    {
+      "node_id": "n0001",
+      "text": "CCTV footage from outside the restaurant shows both of them walking towards Vivek’s car at around 9:15 PM.",
+      "page_no": 0,
+      "span": [
+        133,
+        239
+      ]
+    },
+    {
+      "node_id": "n0002",
+      "text": "The next morning, Vivek’s car was found abandoned near a highway on the outskirts of the city.",
+      "page_no": 0,
+      "span": [
+        241,
+        335
+      ]
+    },
+    {
+      "node_id": "n0003",
+      "text": "Later that day, Vivek’s dead body was discovered in a nearby forest area with signs of blunt force injury.",
+      "page_no": 0,
+      "span": [
+        336,
+        442
+      ]
+    },
+    {
+      "node_id": "n0004",
+      "text": "During investigation, it was found that Arjun had returned home late that night.",
+      "page_no": 0,
+      "span": [
+        444,
+        524
+      ]
+    },
+    {
+      "node_id": "n0005",
+      "text": "Witnesses in his neighborhood reported seeing him enter his house around midnight.",
+      "page_no": 0,
+      "span": [
+        525,
+        607
+      ]
+    },
+    {
+      "node_id": "n0006",
+      "text": "When questioned, Arjun failed to provide a clear explanation of his whereabouts between 9:30 PM and midnight.",
+      "page_no": 0,
+      "span": [
+        608,
+        717
+      ]
+    },
+    {
+      "node_id": "n0007",
+      "text": "A search of Arjun’s house led to the recovery of Vivek’s wristwatch and wallet from a drawer in his bedroom.",
+      "page_no": 0,
+      "span": [
+        719,
+        827
+      ]
+    },
+    {
+      "node_id": "n0008",
+      "text": "No eyewitness has seen the actual incident of violence.",
+      "page_no": 0,
+      "span": [
+        828,
+        883
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from_node": "n0000",
+      "to_node": "n0001",
+      "edge_type": "adjacent"
+    },
+    {
+      "from_node": "n0001",
+      "to_node": "n0002",
+      "edge_type": "adjacent"
+    },
+    {
+      "from_node": "n0002",
+      "to_node": "n0003",
+      "edge_type": "adjacent"
+    },
+    {
+      "from_node": "n0003",
+      "to_node": "n0004",
+      "edge_type": "adjacent"
+    },
+    {
+      "from_node": "n0004",
+      "to_node": "n0005",
+      "edge_type": "adjacent"
+    },
+    {
+      "from_node": "n0005",
+      "to_node": "n0006",
+      "edge_type": "adjacent"
+    },
+    {
+      "from_node": "n0006",
+      "to_node": "n0007",
+      "edge_type": "adjacent"
+    },
+    {
+      "from_node": "n0007",
+      "to_node": "n0008",
+      "edge_type": "adjacent"
+    }
+  ],
+  "node_count": 9,
+  "provenance": {
+    "trace_id": "171c7d39-5076-423c-b86c-79bfaeee4210",
+    "tool_name": "extract_sentences_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-18T08:11:02.858903+00:00",
+    "input_refs": [
+      "cases\\case_02714af89a9b\\normalized_text.txt"
+    ]
+  }
+}

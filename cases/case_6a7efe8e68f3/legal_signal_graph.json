@@ -1,0 +1,367 @@
+{
+  "case_id": "case_6a7efe8e68f3",
+  "tenant_id": "local_dev",
+  "actors": [
+    {
+      "id": "A1",
+      "name": "Arjun",
+      "role": "accused"
+    },
+    {
+      "id": "A2",
+      "name": "Vivek",
+      "role": "victim"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E1",
+      "description": "Arjun and Vivek were seen drinking.",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "object": "",
+      "location": "near the lake",
+      "time": "",
+      "confidence": 1.0
+    },
+    {
+      "event_id": "E2",
+      "description": "Vivek's body was found.",
+      "actors": [
+        "A2"
+      ],
+      "object": "Vivek's body",
+      "location": "",
+      "time": "the next day",
+      "confidence": 1.0
+    },
+    {
+      "event_id": "E3",
+      "description": "Vivek's body had blunt force trauma.",
+      "actors": [
+        "A2"
+      ],
+      "object": "blunt force trauma",
+      "location": "",
+      "time": "the next day",
+      "confidence": 1.0
+    },
+    {
+      "event_id": "E4",
+      "description": "Arjun was found with Vivek's watch.",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "object": "Vivek's watch",
+      "location": "",
+      "time": "",
+      "confidence": 1.0
+    },
+    {
+      "event_id": "E5",
+      "description": "Arjun could not explain why he had Vivek's watch.",
+      "actors": [
+        "A1"
+      ],
+      "object": "Vivek's watch",
+      "location": "",
+      "time": "",
+      "confidence": 1.0
+    }
+  ],
+  "legal_signals": [
+    {
+      "signal": "co_presence_at_location",
+      "category": "relationship",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "related_objects": [],
+      "source_events": [
+        "E1"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "signal": "death_occurred",
+      "category": "result",
+      "actors": [
+        "A2"
+      ],
+      "related_objects": [
+        "Vivek's body"
+      ],
+      "source_events": [
+        "E2"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "signal": "physical_injury_detected",
+      "category": "result",
+      "actors": [
+        "A2"
+      ],
+      "related_objects": [
+        "blunt force trauma"
+      ],
+      "source_events": [
+        "E3"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "signal": "possession_of_property_of_another",
+      "category": "possession",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "related_objects": [
+        "Vivek's watch"
+      ],
+      "source_events": [
+        "E4"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "signal": "absence_of_explanation",
+      "category": "behavior",
+      "actors": [
+        "A1"
+      ],
+      "related_objects": [
+        "Vivek's watch"
+      ],
+      "source_events": [
+        "E5"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "signal": "events_in_close_succession",
+      "category": "temporal",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "related_objects": [],
+      "source_events": [
+        "E1",
+        "E2"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "signal": "last_seen_together",
+      "category": "relationship",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "related_objects": [],
+      "source_events": [],
+      "confidence": 0.8
+    }
+  ],
+  "candidate_sections": [
+    {
+      "section_id": "313",
+      "heading": "Causing miscarriage without woman's consent.",
+      "offence_category": [
+        "offence_against_person",
+        "bodily_harm"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "355",
+      "heading": "Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+      "offence_category": [
+        "assault",
+        "criminal_force",
+        "offence_against_person",
+        "intentional_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "452",
+      "heading": "House-trespass after preparation for hurt, assault or wrongful restraint.",
+      "offence_category": [
+        "offence_against_person",
+        "property_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "458",
+      "heading": "Lurking house-trespass or house-breaking by night after preparation for hurt, assault, or wrongful restraint.",
+      "offence_category": [
+        "property_offence",
+        "offence_against_person"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "489",
+      "heading": "Tampering with property mark with intent to cause injury.",
+      "offence_category": [
+        "property_offence",
+        "offence_against_person"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "323",
+      "heading": "Punishment for voluntarily causing hurt.",
+      "offence_category": [
+        "bodily_harm",
+        "assault"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "460",
+      "heading": "All persons jointly concerned in lurking house-trespass or house-breaking by night punishable where death or grievous hurt caused by one of them.",
+      "offence_category": [
+        "house-trespass",
+        "house-breaking",
+        "grievous_hurt",
+        "death"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "424",
+      "heading": "Dishonest or fraudulent removal or concealment of property.",
+      "offence_category": [
+        "property_offence",
+        "fraud",
+        "dishonesty"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "403",
+      "heading": "Dishonest misappropriation of property.",
+      "offence_category": [
+        "property_offence",
+        "dishonesty_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "404",
+      "heading": "Dishonest misappropriation of property possessed by deceased person at the time of his death.",
+      "offence_category": [
+        "property_offence",
+        "dishonesty_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "300",
+      "heading": "Murder.",
+      "offence_category": [
+        "murder"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "396",
+      "heading": "Dacoity with murder.",
+      "offence_category": [
+        "dacoity",
+        "murder"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "299",
+      "heading": "Culpable homicide.",
+      "offence_category": [
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "303",
+      "heading": "Punishment for murder by life-convict.",
+      "offence_category": [
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "304B",
+      "heading": "Dowry death.",
+      "offence_category": [
+        "offence_against_women",
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "306",
+      "heading": "Abetment of suicide.",
+      "offence_category": [
+        "abetment",
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "307",
+      "heading": "Attempt to murder.",
+      "offence_category": [
+        "attempt",
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "314",
+      "heading": "Death caused by act done with intent to cause miscarriage.",
+      "offence_category": [
+        "offences_against_the_person",
+        "homicide",
+        "miscarriage"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "316",
+      "heading": "Causing death of quick unborn child by act amounting to culpable homicide.",
+      "offence_category": [
+        "criminal_offence",
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "301",
+      "heading": "Culpable homicide by causing death of person other than person whose death was intended.",
+      "offence_category": [
+        "culpable_homicide"
+      ],
+      "relevance_score": 1
+    }
+  ],
+  "candidate_count": 20,
+  "provenance": {
+    "trace_id": "0797a05d-7df7-4cd8-8ade-c3c17c00506d",
+    "tool_name": "extract_legal_signals_v1",
+    "tool_version": "1.0.0",
+    "model_version": "gemini-2.5-flash",
+    "timestamp": "2026-03-18T07:24:13.443795+00:00",
+    "input_refs": [
+      "cases\\case_6a7efe8e68f3\\fact_event_graph.json"
+    ]
+  }
+}

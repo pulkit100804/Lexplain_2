@@ -1,0 +1,805 @@
+{
+  "case_id": "case_523fd00e8a52",
+  "tenant_id": "local_dev",
+  "actors": [
+    {
+      "id": "A1",
+      "name": "The complainant",
+      "role": "complainant"
+    },
+    {
+      "id": "A2",
+      "name": "Ram",
+      "role": "accused"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E1",
+      "type": "false_promise",
+      "description": "Ram made false promises about a job to the complainant.",
+      "actors": [
+        "A2",
+        "A1"
+      ],
+      "object": "job",
+      "location": "",
+      "time": "",
+      "confidence": 1.0
+    },
+    {
+      "event_id": "E2",
+      "type": "deception",
+      "description": "Ram intentionally tricked the complainant.",
+      "actors": [
+        "A2",
+        "A1"
+      ],
+      "object": "",
+      "location": "",
+      "time": "",
+      "confidence": 1.0
+    },
+    {
+      "event_id": "E3",
+      "type": "cheating",
+      "description": "Ram cheated the complainant of Rs 50,000.",
+      "actors": [
+        "A2",
+        "A1"
+      ],
+      "object": "Rs 50,000",
+      "location": "",
+      "time": "",
+      "confidence": 1.0
+    },
+    {
+      "event_id": "E4",
+      "type": "movement",
+      "description": "Ram ran away with the money.",
+      "actors": [
+        "A2"
+      ],
+      "object": "money",
+      "location": "",
+      "time": "",
+      "confidence": 1.0
+    }
+  ],
+  "legal_signals": [
+    {
+      "signal": "deception_for_gain",
+      "source_event": "E1",
+      "confidence": 1.0
+    },
+    {
+      "signal": "suspicious_movement",
+      "source_event": "E4",
+      "confidence": 1.0
+    }
+  ],
+  "candidate_sections": [
+    {
+      "section_id": "416",
+      "heading": "Cheating by personation.",
+      "offence_category": [
+        "cheating",
+        "personation"
+      ]
+    },
+    {
+      "section_id": "417",
+      "heading": "Punishment for cheating.",
+      "offence_category": [
+        "cheating"
+      ]
+    },
+    {
+      "section_id": "418",
+      "heading": "Cheating with knowledge that wrongful loss may ensue to person whose interest offender is bound to protect.",
+      "offence_category": [
+        "cheating"
+      ]
+    },
+    {
+      "section_id": "420",
+      "heading": "Cheating and dishonestly inducing delivery of property.",
+      "offence_category": [
+        "cheating",
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "468",
+      "heading": "Forgery for purpose of cheating.",
+      "offence_category": [
+        "forgery",
+        "cheating"
+      ]
+    },
+    {
+      "section_id": "207",
+      "heading": "Fraudulent claim to property to prevent its seizure as forfeited or in execution.",
+      "offence_category": [
+        "fraud",
+        "property_crime",
+        "obstruction_of_justice"
+      ]
+    },
+    {
+      "section_id": "208",
+      "heading": "Fraudulently suffering decree for sum not due.",
+      "offence_category": [
+        "fraud",
+        "legal_proceedings"
+      ]
+    },
+    {
+      "section_id": "209",
+      "heading": "Dishonestly making false claim in Court.",
+      "offence_category": [
+        "fraud",
+        "false_statement",
+        "offences_against_public_justice"
+      ]
+    },
+    {
+      "section_id": "210",
+      "heading": "Fraudulently obtaining decree for sum not due.",
+      "offence_category": [
+        "fraud",
+        "property_offence",
+        "offence_against_justice"
+      ]
+    },
+    {
+      "section_id": "218",
+      "heading": "Public servant framing incorrect record or writing with intent to save person from punishment or property from forfeiture.",
+      "offence_category": [
+        "public_servant_misconduct",
+        "obstruction_of_justice",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "239",
+      "heading": "Delivery of coin, possessed with knowledge that it is counterfeit.",
+      "offence_category": [
+        "counterfeiting",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "240",
+      "heading": "Delivery of Indian coin, possessed with knowledge that it is counterfeit.",
+      "offence_category": [
+        "counterfeiting",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "241",
+      "heading": "Delivery of coin as genuine, which, when first possessed, the deliverer did not know to be counterfeit.",
+      "offence_category": [
+        "counterfeiting",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "242",
+      "heading": "Possession of counterfeit coin by person who knew it to be counterfeit when he became possessed thereof.",
+      "offence_category": [
+        "fraud",
+        "counterfeiting"
+      ]
+    },
+    {
+      "section_id": "243",
+      "heading": "Possession of Indian coin by person who knew it to be counterfeit when he became possessed thereof.",
+      "offence_category": [
+        "fraud",
+        "counterfeiting"
+      ]
+    },
+    {
+      "section_id": "246",
+      "heading": "Fraudulently or dishonestly diminishing weight or altering composition of coin.",
+      "offence_category": [
+        "fraud",
+        "property_crime"
+      ]
+    },
+    {
+      "section_id": "247",
+      "heading": "Fraudulently or dishonestly diminishing weight or altering composition of Indian coin.",
+      "offence_category": [
+        "currency_offence",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "249",
+      "heading": "Altering appearance of Indian coin with intent that it shall pass as coin of different description.",
+      "offence_category": [
+        "currency_offence",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "250",
+      "heading": "Delivery of coin, possessed with knowledge that it is altered.",
+      "offence_category": [
+        "fraud",
+        "counterfeiting"
+      ]
+    },
+    {
+      "section_id": "251",
+      "heading": "Delivery of Indian coin, possessed with knowledge that it is altered.",
+      "offence_category": [
+        "fraud",
+        "currency_offence"
+      ]
+    },
+    {
+      "section_id": "252",
+      "heading": "Possession of coin by person who knew it to be altered when he became possessed thereof.",
+      "offence_category": [
+        "currency_offence",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "253",
+      "heading": "Possession of Indian coin by person who knew it to be altered when he became possessed thereof.",
+      "offence_category": [
+        "currency_offence",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "254",
+      "heading": "Delivery of coin as genuine which, when first possessed, the deliverer did not know to be altered.",
+      "offence_category": [
+        "counterfeiting",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "258",
+      "heading": "Sale of counterfeit Government stamp.",
+      "offence_category": [
+        "counterfeiting",
+        "fraud",
+        "revenue_offence"
+      ]
+    },
+    {
+      "section_id": "260",
+      "heading": "Using as genuine a Government stamp known to be counterfeit.",
+      "offence_category": [
+        "offences_relating_to_government_stamps",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "261",
+      "heading": "Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government.",
+      "offence_category": [
+        "fraud",
+        "revenue_offence"
+      ]
+    },
+    {
+      "section_id": "262",
+      "heading": "Using Government stamp known to have been before used.",
+      "offence_category": [
+        "fraud",
+        "government_revenue_offence"
+      ]
+    },
+    {
+      "section_id": "263",
+      "heading": "Erasure of mark denoting that stamp has been used.",
+      "offence_category": [
+        "fraud",
+        "revenue_offence",
+        "tampering"
+      ]
+    },
+    {
+      "section_id": "265",
+      "heading": "Fraudulent use of false weight or measure.",
+      "offence_category": [
+        "fraud",
+        "deception"
+      ]
+    },
+    {
+      "section_id": "275",
+      "heading": "Sale of adulterated drugs.",
+      "offence_category": [
+        "public_health",
+        "fraud",
+        "drugs_and_cosmetics"
+      ]
+    },
+    {
+      "section_id": "415",
+      "heading": "Cheating.",
+      "offence_category": [
+        "fraud",
+        "deception",
+        "property_offence",
+        "harm"
+      ]
+    },
+    {
+      "section_id": "421",
+      "heading": "Dishonest or fraudulent removal or concealment of property to prevent distribution among creditor.",
+      "offence_category": [
+        "property_offence",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "422",
+      "heading": "Dishonestly or fraudulently preventing debt being available for creditors.",
+      "offence_category": [
+        "fraud",
+        "financial_crime"
+      ]
+    },
+    {
+      "section_id": "423",
+      "heading": "Dishonest or fraudulent execution of deed of transfer containing false statement of consideration.",
+      "offence_category": [
+        "property_offence",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "424",
+      "heading": "Dishonest or fraudulent removal or concealment of property.",
+      "offence_category": [
+        "property_offence",
+        "fraud",
+        "dishonesty"
+      ]
+    },
+    {
+      "section_id": "471",
+      "heading": "Using as genuine a forged document or electronic record.",
+      "offence_category": [
+        "forgery",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "477",
+      "heading": "Fraudulent cancellation, destruction, etc., of will, authority to adopt, or valuable security.",
+      "offence_category": [
+        "fraud",
+        "mischief"
+      ]
+    },
+    {
+      "section_id": "477A",
+      "heading": "Falsification of accounts.",
+      "offence_category": [
+        "fraud",
+        "falsification",
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "484",
+      "heading": "Counterfeiting a mark used by a public servant.",
+      "offence_category": [
+        "counterfeiting",
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "487",
+      "heading": "Making a false mark upon any receptacle containing goods.",
+      "offence_category": [
+        "fraud"
+      ]
+    },
+    {
+      "section_id": "488",
+      "heading": "Punishment for making use of any such false mark.",
+      "offence_category": [
+        "fraud",
+        "intellectual_property"
+      ]
+    },
+    {
+      "section_id": "206",
+      "heading": "Fraudulent removal or concealment of property to prevent its seizure as forfeited or in execution.",
+      "offence_category": [
+        "property_offence",
+        "obstruction_of_justice"
+      ]
+    },
+    {
+      "section_id": "215",
+      "heading": "Taking gift to help to recover stolen property, etc.",
+      "offence_category": [
+        "offence_against_public_justice",
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "245",
+      "heading": "Unlawfully taking coining instrument from mint.",
+      "offence_category": [
+        "offence_against_public_administration",
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "383",
+      "heading": "Extortion.",
+      "offence_category": [
+        "extortion",
+        "property_offence",
+        "coercion"
+      ]
+    },
+    {
+      "section_id": "403",
+      "heading": "Dishonest misappropriation of property.",
+      "offence_category": [
+        "property_offence",
+        "dishonesty_offence"
+      ]
+    },
+    {
+      "section_id": "404",
+      "heading": "Dishonest misappropriation of property possessed by deceased person at the time of his death.",
+      "offence_category": [
+        "property_offence",
+        "dishonesty_offence"
+      ]
+    },
+    {
+      "section_id": "405",
+      "heading": "Criminal breach of trust.",
+      "offence_category": [
+        "criminal_offence",
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "409",
+      "heading": "Criminal breach of trust by public, servant. or by banker, merchant or agent.",
+      "offence_category": [
+        "property_offence",
+        "criminal_breach_of_trust"
+      ]
+    },
+    {
+      "section_id": "425",
+      "heading": "Mischief.",
+      "offence_category": [
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "430",
+      "heading": "Mischief by injury to works of irrigation or by wrongfully diverting water.",
+      "offence_category": [
+        "property_offence",
+        "mischief"
+      ]
+    },
+    {
+      "section_id": "431",
+      "heading": "Mischief by injury to public road, bridge, river or channel.",
+      "offence_category": [
+        "property_offence",
+        "mischief"
+      ]
+    },
+    {
+      "section_id": "436",
+      "heading": "Mischief by fire or explosive substance with intent to destroy house, etc.",
+      "offence_category": [
+        "property_offence",
+        "mischief"
+      ]
+    },
+    {
+      "section_id": "442",
+      "heading": "House-trespass.",
+      "offence_category": [
+        "property_offence",
+        "trespass"
+      ]
+    },
+    {
+      "section_id": "443",
+      "heading": "Lurking house-trespass.",
+      "offence_category": [
+        "property_offence",
+        "trespass"
+      ]
+    },
+    {
+      "section_id": "447",
+      "heading": "Punishment for criminal trespass.",
+      "offence_category": [
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "451",
+      "heading": "House-trespass in order to commit offence punishable with imprisonment.",
+      "offence_category": [
+        "criminal_offence",
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "452",
+      "heading": "House-trespass after preparation for hurt, assault or wrongful restraint.",
+      "offence_category": [
+        "offence_against_person",
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "453",
+      "heading": "Punishment for lurking house-trespass or house-breaking.",
+      "offence_category": [
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "456",
+      "heading": "Punishment for lurking house-trespass or house-breaking by night.",
+      "offence_category": [
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "457",
+      "heading": "Lurking house-trespass or house-breaking by night in order to commit offence punishable with imprisonment.",
+      "offence_category": [
+        "property_offence",
+        "criminal_trespass"
+      ]
+    },
+    {
+      "section_id": "458",
+      "heading": "Lurking house-trespass or house-breaking by night after preparation for hurt, assault, or wrongful restraint.",
+      "offence_category": [
+        "property_offence",
+        "offence_against_person"
+      ]
+    },
+    {
+      "section_id": "461",
+      "heading": "Dishonestly breaking open receptacle containing property.",
+      "offence_category": [
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "462",
+      "heading": "Punishment for same offence when committed by person entrusted with custody.",
+      "offence_category": [
+        "property_offence",
+        "offence_against_public_order"
+      ]
+    },
+    {
+      "section_id": "481",
+      "heading": "Using a false property mark.",
+      "offence_category": [
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "482",
+      "heading": "Punishment for using a false property mark.",
+      "offence_category": [
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "483",
+      "heading": "Counterfeiting a property mark used by another.",
+      "offence_category": [
+        "property_offence"
+      ]
+    },
+    {
+      "section_id": "489",
+      "heading": "Tampering with property mark with intent to cause injury.",
+      "offence_category": [
+        "property_offence",
+        "offence_against_person"
+      ]
+    },
+    {
+      "section_id": "406",
+      "heading": "Punishment for criminal breach of trust.",
+      "offence_category": [
+        "criminal_breach_of_trust"
+      ]
+    },
+    {
+      "section_id": "408",
+      "heading": "Criminal breach of trust by clerk or servant.",
+      "offence_category": [
+        "criminal_breach_of_trust"
+      ]
+    },
+    {
+      "section_id": "140",
+      "heading": "Wearing garb or carrying token used by soldier, sailor or airman.",
+      "offence_category": [
+        "impersonation",
+        "false_representation"
+      ]
+    },
+    {
+      "section_id": "300",
+      "heading": "Murder.",
+      "offence_category": [
+        "murder"
+      ]
+    },
+    {
+      "section_id": "396",
+      "heading": "Dacoity with murder.",
+      "offence_category": [
+        "dacoity",
+        "murder"
+      ]
+    },
+    {
+      "section_id": "299",
+      "heading": "Culpable homicide.",
+      "offence_category": [
+        "homicide"
+      ]
+    },
+    {
+      "section_id": "303",
+      "heading": "Punishment for murder by life-convict.",
+      "offence_category": [
+        "homicide"
+      ]
+    },
+    {
+      "section_id": "304B",
+      "heading": "Dowry death.",
+      "offence_category": [
+        "offence_against_women",
+        "homicide"
+      ]
+    },
+    {
+      "section_id": "306",
+      "heading": "Abetment of suicide.",
+      "offence_category": [
+        "abetment",
+        "homicide"
+      ]
+    },
+    {
+      "section_id": "307",
+      "heading": "Attempt to murder.",
+      "offence_category": [
+        "attempt",
+        "homicide"
+      ]
+    },
+    {
+      "section_id": "314",
+      "heading": "Death caused by act done with intent to cause miscarriage.",
+      "offence_category": [
+        "offences_against_the_person",
+        "homicide",
+        "miscarriage"
+      ]
+    },
+    {
+      "section_id": "316",
+      "heading": "Causing death of quick unborn child by act amounting to culpable homicide.",
+      "offence_category": [
+        "criminal_offence",
+        "homicide"
+      ]
+    },
+    {
+      "section_id": "495",
+      "heading": "Same offence with concealment of former marriage from person with whom subsequent marriage is contracted.",
+      "offence_category": [
+        "bigamy",
+        "concealment"
+      ]
+    },
+    {
+      "section_id": "449",
+      "heading": "House-trespass in order to commit offence punishable with death.",
+      "offence_category": [
+        "house-trespass",
+        "offence_against_property"
+      ]
+    },
+    {
+      "section_id": "392",
+      "heading": "Punishment for robbery.",
+      "offence_category": [
+        "violent_crime",
+        "property_crime"
+      ]
+    },
+    {
+      "section_id": "398",
+      "heading": "Attempt to commit robbery or dacoity when armed with deadly weapon.",
+      "offence_category": [
+        "attempted_crime",
+        "robbery",
+        "dacoity",
+        "violent_crime",
+        "property_crime"
+      ]
+    },
+    {
+      "section_id": "410",
+      "heading": "Stolen property.",
+      "offence_category": [
+        "property_crime"
+      ]
+    },
+    {
+      "section_id": "414",
+      "heading": "Assisting in concealment of stolen property.",
+      "offence_category": [
+        "property_crime",
+        "criminal_assistance"
+      ]
+    },
+    {
+      "section_id": "439",
+      "heading": "Punishment for intentionally running vessel agroun, or ashore with intent to commit theft, etc.",
+      "offence_category": [
+        "property_crime",
+        "maritime_crime"
+      ]
+    },
+    {
+      "section_id": "450",
+      "heading": "House-trespass in order to commit offence punishable with imprisonment for life.",
+      "offence_category": [
+        "property_crime",
+        "intent-based_offence"
+      ]
+    },
+    {
+      "section_id": "454",
+      "heading": "Lurking house-trespass or house-breaking in order to commit offence punishable with imprisonment.",
+      "offence_category": [
+        "property_crime",
+        "criminal_trespass"
+      ]
+    }
+  ],
+  "candidate_count": 89,
+  "provenance": {
+    "trace_id": "189ffc5f-dd59-4680-ad3b-0a7a987af02e",
+    "tool_name": "extract_legal_signals_v1",
+    "tool_version": "1.0.0",
+    "model_version": "gemini-2.5-flash",
+    "timestamp": "2026-03-18T06:04:10.526546+00:00",
+    "input_refs": [
+      "cases\\case_523fd00e8a52\\fact_event_graph.json"
+    ]
+  }
+}

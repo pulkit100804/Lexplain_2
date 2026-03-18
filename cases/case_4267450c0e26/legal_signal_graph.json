@@ -1,0 +1,535 @@
+{
+  "case_id": "case_4267450c0e26",
+  "tenant_id": "local_dev",
+  "actors": [
+    {
+      "id": "A1",
+      "name": "Arjun",
+      "role": "accused"
+    },
+    {
+      "id": "A2",
+      "name": "Vivek",
+      "role": "victim"
+    },
+    {
+      "id": "A3",
+      "name": "Witnesses",
+      "role": "witness"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E1",
+      "description": "Arjun and Vivek were seen leaving a restaurant.",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "object": "",
+      "location": "restaurant",
+      "time": "evening of 5th January",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E2",
+      "description": "Arjun and Vivek had a heated argument regarding money.",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "object": "money",
+      "location": "restaurant",
+      "time": "evening of 5th January",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E3",
+      "description": "CCTV footage showed Arjun and Vivek walking towards Vivek’s car.",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "object": "Vivek's car",
+      "location": "outside the restaurant",
+      "time": "around 9:15 PM",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E4",
+      "description": "Vivek’s car was found abandoned.",
+      "actors": [
+        "A2"
+      ],
+      "object": "Vivek's car",
+      "location": "near a highway on the outskirts of the city",
+      "time": "next morning (6th January)",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E5",
+      "description": "Vivek’s dead body was discovered.",
+      "actors": [
+        "A2"
+      ],
+      "object": "Vivek's body",
+      "location": "nearby forest area",
+      "time": "later that day (6th January)",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E6",
+      "description": "Vivek’s body had signs of blunt force injury.",
+      "actors": [
+        "A2"
+      ],
+      "object": "Vivek's body",
+      "location": "",
+      "time": "",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E7",
+      "description": "Arjun returned home late that night.",
+      "actors": [
+        "A1"
+      ],
+      "object": "",
+      "location": "Arjun's house",
+      "time": "late that night (5th January)",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E8",
+      "description": "Witnesses reported seeing Arjun enter his house around midnight.",
+      "actors": [
+        "A1",
+        "A3"
+      ],
+      "object": "",
+      "location": "Arjun's house",
+      "time": "around midnight",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E9",
+      "description": "Arjun failed to provide a clear explanation of his whereabouts.",
+      "actors": [
+        "A1"
+      ],
+      "object": "",
+      "location": "",
+      "time": "between 9:30 PM and midnight",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E10",
+      "description": "Vivek’s wristwatch was recovered from a drawer in Arjun’s bedroom.",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "object": "Vivek's wristwatch",
+      "location": "Arjun's bedroom",
+      "time": "during investigation",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E11",
+      "description": "Vivek’s wallet was recovered from a drawer in Arjun’s bedroom.",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "object": "Vivek's wallet",
+      "location": "Arjun's bedroom",
+      "time": "during investigation",
+      "confidence": 0.9
+    },
+    {
+      "event_id": "E12",
+      "description": "No eyewitness has seen the actual incident of violence.",
+      "actors": [],
+      "object": "",
+      "location": "",
+      "time": "",
+      "confidence": 0.9
+    }
+  ],
+  "legal_signals": [
+    {
+      "signal": "dispute_between_actors",
+      "category": "relationship",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "related_objects": [
+        "money"
+      ],
+      "source_events": [
+        "E2"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "last_seen_together",
+      "category": "relationship",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "related_objects": [
+        "Vivek's car"
+      ],
+      "source_events": [
+        "E3"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "death_occurred",
+      "category": "result",
+      "actors": [
+        "A2"
+      ],
+      "related_objects": [
+        "Vivek's body"
+      ],
+      "source_events": [
+        "E5"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "physical_injury_detected",
+      "category": "result",
+      "actors": [
+        "A2"
+      ],
+      "related_objects": [
+        "Vivek's body"
+      ],
+      "source_events": [
+        "E6"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "cause_of_death_indicated",
+      "category": "result",
+      "actors": [
+        "A2"
+      ],
+      "related_objects": [
+        "blunt force injury"
+      ],
+      "source_events": [
+        "E6"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "unusual_behavior_observed",
+      "category": "behavior",
+      "actors": [
+        "A1"
+      ],
+      "related_objects": [],
+      "source_events": [
+        "E7"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "absence_of_explanation",
+      "category": "behavior",
+      "actors": [
+        "A1"
+      ],
+      "related_objects": [],
+      "source_events": [
+        "E9"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "temporal_gap_unexplained",
+      "category": "temporal",
+      "actors": [
+        "A1"
+      ],
+      "related_objects": [],
+      "source_events": [
+        "E9"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "possession_of_property_of_another",
+      "category": "possession",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "related_objects": [
+        "Vivek's wristwatch",
+        "Vivek's wallet"
+      ],
+      "source_events": [
+        "E10",
+        "E11"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "object_recovered_linked_to_actor",
+      "category": "evidentiary",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "related_objects": [
+        "Vivek's wristwatch",
+        "Vivek's wallet"
+      ],
+      "source_events": [
+        "E10",
+        "E11"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "property_found_abandoned",
+      "category": "result",
+      "actors": [
+        "A2"
+      ],
+      "related_objects": [
+        "Vivek's car"
+      ],
+      "source_events": [
+        "E4"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "absence_of_direct_evidence",
+      "category": "evidentiary",
+      "actors": [],
+      "related_objects": [],
+      "source_events": [
+        "E12"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "signal": "co_presence_at_location",
+      "category": "relationship",
+      "actors": [
+        "A1",
+        "A2"
+      ],
+      "related_objects": [],
+      "source_events": [
+        "E1"
+      ],
+      "confidence": 0.9
+    }
+  ],
+  "candidate_sections": [
+    {
+      "section_id": "313",
+      "heading": "Causing miscarriage without woman's consent.",
+      "offence_category": [
+        "offence_against_person",
+        "bodily_harm"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "355",
+      "heading": "Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+      "offence_category": [
+        "assault",
+        "criminal_force",
+        "offence_against_person",
+        "intentional_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "452",
+      "heading": "House-trespass after preparation for hurt, assault or wrongful restraint.",
+      "offence_category": [
+        "offence_against_person",
+        "property_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "458",
+      "heading": "Lurking house-trespass or house-breaking by night after preparation for hurt, assault, or wrongful restraint.",
+      "offence_category": [
+        "property_offence",
+        "offence_against_person"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "489",
+      "heading": "Tampering with property mark with intent to cause injury.",
+      "offence_category": [
+        "property_offence",
+        "offence_against_person"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "323",
+      "heading": "Punishment for voluntarily causing hurt.",
+      "offence_category": [
+        "bodily_harm",
+        "assault"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "424",
+      "heading": "Dishonest or fraudulent removal or concealment of property.",
+      "offence_category": [
+        "property_offence",
+        "fraud",
+        "dishonesty"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "403",
+      "heading": "Dishonest misappropriation of property.",
+      "offence_category": [
+        "property_offence",
+        "dishonesty_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "404",
+      "heading": "Dishonest misappropriation of property possessed by deceased person at the time of his death.",
+      "offence_category": [
+        "property_offence",
+        "dishonesty_offence"
+      ],
+      "relevance_score": 2
+    },
+    {
+      "section_id": "300",
+      "heading": "Murder.",
+      "offence_category": [
+        "murder"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "396",
+      "heading": "Dacoity with murder.",
+      "offence_category": [
+        "dacoity",
+        "murder"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "299",
+      "heading": "Culpable homicide.",
+      "offence_category": [
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "303",
+      "heading": "Punishment for murder by life-convict.",
+      "offence_category": [
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "304B",
+      "heading": "Dowry death.",
+      "offence_category": [
+        "offence_against_women",
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "306",
+      "heading": "Abetment of suicide.",
+      "offence_category": [
+        "abetment",
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "307",
+      "heading": "Attempt to murder.",
+      "offence_category": [
+        "attempt",
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "314",
+      "heading": "Death caused by act done with intent to cause miscarriage.",
+      "offence_category": [
+        "offences_against_the_person",
+        "homicide",
+        "miscarriage"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "316",
+      "heading": "Causing death of quick unborn child by act amounting to culpable homicide.",
+      "offence_category": [
+        "criminal_offence",
+        "homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "301",
+      "heading": "Culpable homicide by causing death of person other than person whose death was intended.",
+      "offence_category": [
+        "culpable_homicide"
+      ],
+      "relevance_score": 1
+    },
+    {
+      "section_id": "460",
+      "heading": "All persons jointly concerned in lurking house-trespass or house-breaking by night punishable where death or grievous hurt caused by one of them.",
+      "offence_category": [
+        "house-trespass",
+        "house-breaking",
+        "grievous_hurt",
+        "death"
+      ],
+      "relevance_score": 1
+    }
+  ],
+  "candidate_count": 20,
+  "provenance": {
+    "trace_id": "071440fb-fdcc-4b9c-8911-f15cb5b7451f",
+    "tool_name": "extract_legal_signals_v1",
+    "tool_version": "1.0.0",
+    "model_version": "gemini-2.5-flash",
+    "timestamp": "2026-03-18T07:39:49.678664+00:00",
+    "input_refs": [
+      "cases\\case_4267450c0e26\\fact_event_graph.json"
+    ]
+  }
+}

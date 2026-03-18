@@ -20,7 +20,7 @@ from mcp.tool_registry import ToolRegistry
 from utils.provenance import make_provenance
 
 # ── Gemini adapter ───────────────────────────────────────────────────────────
-_GEMINI_MODEL = "gemini-1.5-flash"
+_GEMINI_MODEL = "gemini-2.5-flash"
 
 
 def _call_gemini(system_prompt: str, user_json: str, temperature: float = 0.2, max_tokens: int = 2048) -> str:
@@ -68,6 +68,8 @@ class MCPServer:
         from mcp.tools.build_fact_graph import build_fact_graph_v1
         from mcp.tools.identify_statutes import identify_statutes_v1
         from mcp.tools.evaluate_ingredients import evaluate_ingredients_v1
+        from mcp.tools.extract_legal_signals import extract_legal_signals_v1
+        from mcp.tools.evaluate_statute_ingredients import evaluate_statute_ingredients_v1
         from mcp.tools.search_precedents import search_precedents_v1
         from mcp.tools.compare_precedents import compare_precedents_v1
         from mcp.tools.mine_loopholes import mine_loopholes_v1
@@ -78,10 +80,13 @@ class MCPServer:
         self.registry.register("build_fact_graph_v1", build_fact_graph_v1, "1.0.0")
         self.registry.register("identify_statutes_v1", identify_statutes_v1, "1.0.0")
         self.registry.register("evaluate_ingredients_v1", evaluate_ingredients_v1, "1.0.0")
+        self.registry.register("extract_legal_signals_v1", extract_legal_signals_v1, "1.0.0")
+        self.registry.register("evaluate_statute_ingredients_v1", evaluate_statute_ingredients_v1, "1.0.0")
         self.registry.register("search_precedents_v1", search_precedents_v1, "1.0.0")
         self.registry.register("compare_precedents_v1", compare_precedents_v1, "1.0.0")
         self.registry.register("mine_loopholes_v1", mine_loopholes_v1, "1.0.0")
         self.registry.register("generate_argument_v1", generate_argument_v1, "1.0.0")
+
 
     # ── Public call_tool ─────────────────────────────────────────────────────
 

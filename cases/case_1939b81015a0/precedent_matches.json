@@ -1,0 +1,16 @@
+{
+  "case_id": "case_1939b81015a0",
+  "tenant_id": "local_dev",
+  "matches": [],
+  "note": "RAG intentionally left as placeholder; plug your retrieval later.",
+  "provenance": {
+    "trace_id": "e85d0f22-2262-4cbc-8d7a-c153c809b478",
+    "tool_name": "search_precedents_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-17T18:40:25.795464+00:00",
+    "input_refs": [
+      "cases\\case_1939b81015a0\\fact_event_graph.json"
+    ]
+  }
+}

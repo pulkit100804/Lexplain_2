@@ -1,0 +1,592 @@
+{
+  "415.1": [
+    "action"
+  ],
+  "415.2": [
+    "action",
+    "possession"
+  ],
+  "415.3": [
+    "result",
+    "action",
+    "possession"
+  ],
+  "415.4": [
+    "action"
+  ],
+  "424.1": [
+    "action",
+    "possession"
+  ],
+  "424.2": [
+    "action",
+    "possession"
+  ],
+  "424.3": [
+    "action",
+    "possession"
+  ],
+  "424.4": [
+    "action",
+    "possession"
+  ],
+  "424.5": [
+    "action"
+  ],
+  "420.1": [
+    "action"
+  ],
+  "420.2": [
+    "action"
+  ],
+  "420.3": [
+    "action"
+  ],
+  "420.4": [
+    "action"
+  ],
+  "420.5": [
+    "action"
+  ],
+  "420.6": [
+    "action"
+  ],
+  "207.1": [
+    "possession"
+  ],
+  "207.2": [
+    "mental_state"
+  ],
+  "207.3": [
+    "possession"
+  ],
+  "207.4": [
+    "possession",
+    "mental_state"
+  ],
+  "207.5": [
+    "circumstance"
+  ],
+  "207.6": [
+    "circumstance"
+  ],
+  "210.1": [
+    "action"
+  ],
+  "210.2": [
+    "action"
+  ],
+  "210.3": [
+    "possession"
+  ],
+  "210.4": [
+    "action"
+  ],
+  "210.5": [
+    "action"
+  ],
+  "210.6": [
+    "action"
+  ],
+  "246.1": [
+    "result"
+  ],
+  "246.2": [
+    "result"
+  ],
+  "246.3": [
+    "action"
+  ],
+  "265.1": [
+    "action"
+  ],
+  "265.2": [
+    "action"
+  ],
+  "421.1": [
+    "action",
+    "possession"
+  ],
+  "421.2": [
+    "action",
+    "possession"
+  ],
+  "421.3": [
+    "action",
+    "possession"
+  ],
+  "421.4": [
+    "action",
+    "possession"
+  ],
+  "421.5": [
+    "action",
+    "possession"
+  ],
+  "421.6": [
+    "mental_state"
+  ],
+  "421.7": [
+    "mental_state"
+  ],
+  "423.1": [
+    "action"
+  ],
+  "423.2": [
+    "action",
+    "possession"
+  ],
+  "423.3": [
+    "action"
+  ],
+  "423.4": [
+    "action"
+  ],
+  "477A.1": [
+    "relationship"
+  ],
+  "477A.2": [
+    "mental_state"
+  ],
+  "477A.3": [
+    "action"
+  ],
+  "477A.4": [
+    "circumstance",
+    "possession"
+  ],
+  "477A.5": [
+    "action"
+  ],
+  "403.1": [
+    "action",
+    "possession"
+  ],
+  "403.2": [
+    "action",
+    "possession"
+  ],
+  "403.3": [
+    "action"
+  ],
+  "403.4": [
+    "possession"
+  ],
+  "403.5": [
+    "possession"
+  ],
+  "403.6": [
+    "action",
+    "possession"
+  ],
+  "403.7": [
+    "possession"
+  ],
+  "403.8": [
+    "possession",
+    "mental_state"
+  ],
+  "403.9": [
+    "possession",
+    "mental_state"
+  ],
+  "404.1": [
+    "action",
+    "possession"
+  ],
+  "404.2": [
+    "possession",
+    "mental_state"
+  ],
+  "404.3": [
+    "possession"
+  ],
+  "404.4": [
+    "action"
+  ],
+  "409.1": [
+    "relationship"
+  ],
+  "409.2": [
+    "action",
+    "possession"
+  ],
+  "416.1": [
+    "action"
+  ],
+  "416.2": [
+    "action"
+  ],
+  "416.3": [
+    "action"
+  ],
+  "416.4": [
+    "circumstance"
+  ],
+  "417.1": [
+    "action"
+  ],
+  "418.1": [
+    "action"
+  ],
+  "418.2": [
+    "mental_state"
+  ],
+  "418.3": [
+    "action"
+  ],
+  "418.4": [
+    "circumstance"
+  ],
+  "468.1": [
+    "action"
+  ],
+  "468.2": [
+    "action"
+  ],
+  "208.1": [
+    "action",
+    "result"
+  ],
+  "208.2": [
+    "circumstance"
+  ],
+  "208.3": [
+    "circumstance"
+  ],
+  "208.4": [
+    "result"
+  ],
+  "208.5": [
+    "circumstance",
+    "possession"
+  ],
+  "208.6": [
+    "action"
+  ],
+  "208.7": [
+    "circumstance"
+  ],
+  "209.1": [
+    "mental_state"
+  ],
+  "209.2": [
+    "mental_state"
+  ],
+  "209.3": [
+    "mental_state"
+  ],
+  "209.4": [
+    "mental_state"
+  ],
+  "209.5": [
+    "action"
+  ],
+  "209.6": [
+    "action"
+  ],
+  "209.7": [
+    "mental_state"
+  ],
+  "218.1": [
+    "circumstance"
+  ],
+  "218.2": [
+    "action"
+  ],
+  "218.3": [
+    "mental_state"
+  ],
+  "218.4": [
+    "mental_state"
+  ],
+  "218.5": [
+    "possession",
+    "mental_state"
+  ],
+  "313.1": [
+    "action"
+  ],
+  "313.2": [
+    "circumstance"
+  ],
+  "313.3": [
+    "circumstance"
+  ],
+  "355.1": [
+    "action"
+  ],
+  "355.2": [
+    "mental_state"
+  ],
+  "355.3": [
+    "action"
+  ],
+  "323.1": [
+    "relationship"
+  ],
+  "323.2": [
+    "circumstance"
+  ],
+  "323.3": [
+    "action"
+  ],
+  "300.1": [
+    "action"
+  ],
+  "300.2": [
+    "action"
+  ],
+  "300.3": [
+    "action"
+  ],
+  "300.4": [
+    "action"
+  ],
+  "396.1": [
+    "action"
+  ],
+  "299.1": [
+    "result",
+    "action"
+  ],
+  "299.2": [
+    "action",
+    "mental_state",
+    "result"
+  ],
+  "299.3": [
+    "mental_state"
+  ],
+  "299.4": [
+    "mental_state"
+  ],
+  "299.5": [
+    "action"
+  ],
+  "299.6": [
+    "action"
+  ],
+  "299.7": [
+    "action"
+  ],
+  "299.8": [
+    "result",
+    "action"
+  ],
+  "303.1": [
+    "circumstance"
+  ],
+  "303.2": [
+    "action"
+  ],
+  "304B.1": [
+    "result"
+  ],
+  "304B.2": [
+    "circumstance"
+  ],
+  "304B.3": [
+    "result"
+  ],
+  "304B.4": [
+    "action"
+  ],
+  "304B.5": [
+    "action"
+  ],
+  "304B.6": [
+    "action"
+  ],
+  "304B.7": [
+    "action"
+  ],
+  "304B.8": [],
+  "306.1": [
+    "action"
+  ],
+  "306.2": [
+    "action"
+  ],
+  "307.1": [
+    "action"
+  ],
+  "307.2": [
+    "mental_state"
+  ],
+  "307.3": [
+    "circumstance"
+  ],
+  "307.4": [
+    "action"
+  ],
+  "307.5": [
+    "relationship"
+  ],
+  "307.6": [
+    "result"
+  ],
+  "314.1": [
+    "mental_state"
+  ],
+  "314.2": [],
+  "314.3": [
+    "mental_state"
+  ],
+  "316.1": [
+    "result",
+    "action"
+  ],
+  "316.2": [
+    "action",
+    "result"
+  ],
+  "301.1": [
+    "action"
+  ],
+  "301.2": [
+    "action"
+  ],
+  "301.3": [
+    "circumstance"
+  ],
+  "301.4": [
+    "action"
+  ],
+  "460.1": [
+    "action"
+  ],
+  "460.2": [
+    "action",
+    "mental_state",
+    "result"
+  ],
+  "460.3": [
+    "action"
+  ],
+  "308.1": [
+    "action"
+  ],
+  "308.2": [
+    "mental_state"
+  ],
+  "308.3": [
+    "result",
+    "action"
+  ],
+  "308.4": [
+    "action"
+  ],
+  "315.1": [
+    "action"
+  ],
+  "315.2": [
+    "mental_state"
+  ],
+  "315.3": [
+    "mental_state"
+  ],
+  "315.4": [
+    "action",
+    "result"
+  ],
+  "315.5": [
+    "action"
+  ],
+  "315.6": [
+    "action"
+  ],
+  "312.1": [
+    "action"
+  ],
+  "312.2": [
+    "action"
+  ],
+  "312.3": [
+    "action"
+  ],
+  "312.4": [
+    "action"
+  ],
+  "341.1": [],
+  "341.2": [
+    "action"
+  ],
+  "341.3": [],
+  "366A.1": [
+    "action"
+  ],
+  "366A.2": [
+    "mental_state"
+  ],
+  "387.1": [
+    "result",
+    "action"
+  ],
+  "495.1": [
+    "action"
+  ],
+  "495.2": [
+    "circumstance"
+  ],
+  "256.1": [
+    "possession"
+  ],
+  "256.2": [
+    "action"
+  ],
+  "256.3": [
+    "mental_state"
+  ],
+  "259.1": [
+    "mental_state"
+  ],
+  "259.2": [
+    "action"
+  ],
+  "259.3": [
+    "mental_state"
+  ],
+  "412.1": [
+    "action",
+    "possession"
+  ],
+  "412.2": [
+    "mental_state",
+    "possession"
+  ],
+  "412.3": [
+    "action"
+  ],
+  "412.4": [
+    "mental_state",
+    "possession"
+  ],
+  "452.1": [
+    "action"
+  ],
+  "452.2": [
+    "mental_state"
+  ],
+  "452.3": [
+    "mental_state"
+  ],
+  "452.4": [
+    "mental_state"
+  ],
+  "452.5": [
+    "mental_state"
+  ],
+  "452.6": [
+    "mental_state"
+  ],
+  "452.7": [
+    "mental_state"
+  ],
+  "458.1": [
+    "mental_state"
+  ],
+  "489.1": [
+    "mental_state"
+  ]
+}

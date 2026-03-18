@@ -1,0 +1,1079 @@
+{
+  "case_id": "case_4267450c0e26",
+  "tenant_id": "local_dev",
+  "statute_evaluations": [
+    {
+      "statute_id": "396",
+      "name": "Dacoity with murder.",
+      "status": "evaluated",
+      "score": 1.0,
+      "confidence": "high",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "396.1",
+          "text": "Any one of these persons commits murder.",
+          "element_type": "action",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "1/1 ingredients satisfied with direct facts.",
+        "Core [396.1]: Death occurred involving Vivek's body (actors: A2)"
+      ]
+    },
+    {
+      "statute_id": "404",
+      "name": "Dishonest misappropriation of property possessed by deceased person at the time of his death.",
+      "status": "evaluated",
+      "score": 0.8667,
+      "confidence": "medium",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "404.1",
+          "text": "Whoever dishonestly misappropriates or converts to his own use property",
+          "element_type": "actus_reus",
+          "status": "partially_satisfied",
+          "confidence": 0.6,
+          "evidence": "Partial: found [possession], missing [deception]. Evidence: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "404.2",
+          "text": "knowing that such property was in the possession of a deceased person at the time of that person's decease",
+          "element_type": "mens_rea",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2); Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2); Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "404.3",
+          "text": "and has not since been in the possession of any person legally entitled to such possession",
+          "element_type": "condition",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "404.4",
+          "text": "if the offender at the time of such person's decease was employed by him as a clerk or servant",
+          "element_type": "aggravating_factor",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "3/4 ingredients satisfied with direct facts.",
+        "1 ingredients partially supported.",
+        "Core [404.2]: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2); Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2); Death occurred involving Vivek's body (actors: A2)"
+      ]
+    },
+    {
+      "statute_id": "403",
+      "name": "Dishonest misappropriation of property.",
+      "status": "evaluated",
+      "score": 0.8143,
+      "confidence": "medium",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "403.1",
+          "text": "Whoever dishonestly misappropriates any movable property.",
+          "element_type": "actus_reus",
+          "status": "partially_satisfied",
+          "confidence": 0.6,
+          "evidence": "Partial: found [possession], missing [deception]. Evidence: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "403.2",
+          "text": "Whoever dishonestly converts to his own use any movable property.",
+          "element_type": "actus_reus",
+          "status": "partially_satisfied",
+          "confidence": 0.6,
+          "evidence": "Partial: found [possession], missing [deception]. Evidence: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "403.3",
+          "text": "A dishonest misappropriation for a time only is a misappropriation.",
+          "element_type": "condition",
+          "status": "partially_satisfied",
+          "confidence": 0.5,
+          "evidence": "Partial: found [possession], missing [deception]. Evidence: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "403.4",
+          "text": "A person finds property not in the possession of any other person.",
+          "element_type": "condition",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2); Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "403.5",
+          "text": "The finder takes such property for the purpose of protecting it for, or of restoring it to, the owner, and does not take or misappropriate it dishonestly.",
+          "element_type": "exception",
+          "status": "partially_satisfied",
+          "confidence": 0.5,
+          "evidence": "Partial: found [possession], missing [deception]. Evidence: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "403.6",
+          "text": "The finder appropriates the found property to his own use.",
+          "element_type": "actus_reus",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "403.7",
+          "text": "At the time of appropriation, the finder has not kept the property a reasonable time to enable the owner to claim it.",
+          "element_type": "condition",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "403.8",
+          "text": "At the time of appropriating found property, the finder does not believe it to be his own property.",
+          "element_type": "mens_rea",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "403.9",
+          "text": "At the time of appropriating found property, the finder does not in good faith believe that the real owner cannot be found.",
+          "element_type": "mens_rea",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "5/9 ingredients satisfied with direct facts.",
+        "4 ingredients partially supported.",
+        "Core [403.6]: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+        "Core [403.8]: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+        "Core [403.9]: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)"
+      ]
+    },
+    {
+      "statute_id": "303",
+      "name": "Punishment for murder by life-convict.",
+      "status": "evaluated",
+      "score": 0.6667,
+      "confidence": "medium",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "303.1",
+          "text": "Whoever, being under sentence of imprisonment for life",
+          "element_type": "perpetrator_status",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "303.2",
+          "text": "commits murder",
+          "element_type": "act",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "1/2 ingredients satisfied with direct facts.",
+        "1 ingredients not satisfied.",
+        "Core [303.2]: Death occurred involving Vivek's body (actors: A2)"
+      ]
+    },
+    {
+      "statute_id": "299",
+      "name": "Culpable homicide.",
+      "status": "evaluated",
+      "score": 0.5333,
+      "confidence": "medium",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "299.1",
+          "text": "Whoever causes death.",
+          "element_type": "actus_reus",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "299.2",
+          "text": "The act is done with the intention of causing death.",
+          "element_type": "mens_rea",
+          "status": "partially_satisfied",
+          "confidence": 0.4,
+          "evidence": "Partial: found [death], missing [motive]. Evidence: Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "299.3",
+          "text": "The act is done with the intention of causing such bodily injury as is likely to cause death.",
+          "element_type": "mens_rea",
+          "status": "partially_satisfied",
+          "confidence": 0.4,
+          "evidence": "Partial: found [death, injury], missing [motive]. Evidence: Death occurred involving Vivek's body (actors: A2); Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "299.4",
+          "text": "The act is done with the knowledge that he is likely by such act to cause death.",
+          "element_type": "mens_rea",
+          "status": "partially_satisfied",
+          "confidence": 0.4,
+          "evidence": "Partial: found [death], missing [motive]. Evidence: Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "299.5",
+          "text": "A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death.",
+          "element_type": "causation_condition",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "299.6",
+          "text": "Where death is caused by bodily injury, the person who causes such bodily injury shall be deemed to have caused the death, although by resorting to proper remedies and skilful treatment the death might have been prevented.",
+          "element_type": "causation_condition",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Death occurred involving Vivek's body (actors: A2); Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "299.7",
+          "text": "The causing of the death of a child in the mother's womb is not homicide.",
+          "element_type": "exclusion_condition",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting ',' delimiter: line 1 column 36 (char 35)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "299.8",
+          "text": "It may amount to culpable homicide to cause the death of a living child, if any part of that child has been brought forth, though the child may not have breathed or been completely born.",
+          "element_type": "inclusion_condition",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        }
+      ],
+      "reasoning": [
+        "3/8 ingredients satisfied with direct facts.",
+        "3 ingredients partially supported.",
+        "2 ingredients not satisfied.",
+        "Core [299.1]: Death occurred involving Vivek's body (actors: A2)"
+      ]
+    },
+    {
+      "statute_id": "323",
+      "name": "Punishment for voluntarily causing hurt.",
+      "status": "evaluated",
+      "score": 0.5,
+      "confidence": "medium",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "323.1",
+          "text": "Whoever",
+          "element_type": "actor",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting value: line 1 column 30 (char 29)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "323.2",
+          "text": "except in the case provided for by section 334",
+          "element_type": "exception",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "323.3",
+          "text": "voluntarily causes hurt",
+          "element_type": "act",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "1/3 ingredients satisfied with direct facts.",
+        "2 ingredients not satisfied.",
+        "Core [323.3]: Physical injury detected involving Vivek's body (actors: A2)"
+      ]
+    },
+    {
+      "statute_id": "300",
+      "name": "Murder.",
+      "status": "evaluated",
+      "score": 0.5,
+      "confidence": "medium",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "300.1",
+          "text": "the act by which the death is caused is done with the intention of causing death",
+          "element_type": "condition",
+          "status": "partially_satisfied",
+          "confidence": 0.5,
+          "evidence": "Partial: found [death], missing [motive]. Evidence: Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "300.2",
+          "text": "the act is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused",
+          "element_type": "condition",
+          "status": "partially_satisfied",
+          "confidence": 0.5,
+          "evidence": "Partial: found [injury], missing [motive]. Evidence: Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "300.3",
+          "text": "the act is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death",
+          "element_type": "condition",
+          "status": "partially_satisfied",
+          "confidence": 0.5,
+          "evidence": "Partial: found [death, injury], missing [motive]. Evidence: Death occurred involving Vivek's body (actors: A2); Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "300.4",
+          "text": "the person committing the act knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury",
+          "element_type": "condition",
+          "status": "partially_satisfied",
+          "confidence": 0.5,
+          "evidence": "Partial: found [death, injury], missing [motive]. Evidence: Death occurred involving Vivek's body (actors: A2); Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "4 ingredients partially supported."
+      ]
+    },
+    {
+      "statute_id": "424",
+      "name": "Dishonest or fraudulent removal or concealment of property.",
+      "status": "evaluated",
+      "score": 0.48,
+      "confidence": "medium",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "424.1",
+          "text": "A person dishonestly or fraudulently conceals any property of himself or any other person.",
+          "element_type": "actus_reus",
+          "status": "partially_satisfied",
+          "confidence": 0.6,
+          "evidence": "Partial: found [possession], missing [deception]. Evidence: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "424.2",
+          "text": "A person dishonestly or fraudulently removes any property of himself or any other person.",
+          "element_type": "actus_reus",
+          "status": "partially_satisfied",
+          "confidence": 0.6,
+          "evidence": "Partial: found [possession], missing [deception]. Evidence: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "424.3",
+          "text": "A person dishonestly or fraudulently assists in the concealment of property.",
+          "element_type": "actus_reus",
+          "status": "partially_satisfied",
+          "confidence": 0.6,
+          "evidence": "Partial: found [possession], missing [deception]. Evidence: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "424.4",
+          "text": "A person dishonestly or fraudulently assists in the removal of property.",
+          "element_type": "actus_reus",
+          "status": "partially_satisfied",
+          "confidence": 0.6,
+          "evidence": "Partial: found [possession], missing [deception]. Evidence: Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "424.5",
+          "text": "A person dishonestly releases any demand or claim to which he is entitled.",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['deception']",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "4 ingredients partially supported.",
+        "1 ingredients not satisfied."
+      ]
+    },
+    {
+      "statute_id": "489",
+      "name": "Tampering with property mark with intent to cause injury.",
+      "status": "evaluated",
+      "score": 0.4,
+      "confidence": "medium",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "489.1",
+          "text": "The accused knows it to be likely that he may thereby cause injury to any person",
+          "element_type": "mens_rea",
+          "status": "partially_satisfied",
+          "confidence": 0.4,
+          "evidence": "Partial: found [injury], missing [motive]. Evidence: Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "1 ingredients partially supported."
+      ]
+    },
+    {
+      "statute_id": "460",
+      "name": "All persons jointly concerned in lurking house-trespass or house-breaking by night punishable where death or grievous hurt caused by one of them.",
+      "status": "evaluated",
+      "score": 0.4,
+      "confidence": "medium",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "460.1",
+          "text": "The offence committed is lurking house-trespass by night or house-breaking by night.",
+          "element_type": "act",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['trespass']",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "460.2",
+          "text": "At the time of committing such offence, any person guilty of such offence voluntarily causes or attempts to cause death or grievous hurt to any person.",
+          "element_type": "consequence",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Death occurred involving Vivek's body (actors: A2); Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "460.3",
+          "text": "The person being punished is jointly concerned in committing such lurking house-trespass by night or house-breaking by night.",
+          "element_type": "participation",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['trespass']",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "1/3 ingredients satisfied with direct facts.",
+        "2 ingredients not satisfied.",
+        "Core [460.2]: Death occurred involving Vivek's body (actors: A2); Physical injury detected involving Vivek's body (actors: A2)"
+      ]
+    },
+    {
+      "statute_id": "301",
+      "name": "Culpable homicide by causing death of person other than person whose death was intended.",
+      "status": "evaluated",
+      "score": 0.375,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "301.1",
+          "text": "A person does something which he intends or knows to be likely to cause death.",
+          "element_type": "actus_reus_and_mens_rea",
+          "status": "partially_satisfied",
+          "confidence": 0.5,
+          "evidence": "Partial: found [death], missing [motive]. Evidence: Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "301.2",
+          "text": "The act commits culpable homicide by causing the death of any person.",
+          "element_type": "result",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting value: line 1 column 30 (char 29)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "301.3",
+          "text": "The person whose death is caused is neither the person whose death the offender intended nor knew himself to be likely to cause.",
+          "element_type": "circumstance",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "301.4",
+          "text": "The culpable homicide committed by the offender is of the description of which it would have been if he had caused the death of the person whose death he intended or knew himself to be likely to cause.",
+          "element_type": "legal_consequence",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        }
+      ],
+      "reasoning": [
+        "1/4 ingredients satisfied with direct facts.",
+        "1 ingredients partially supported.",
+        "2 ingredients not satisfied."
+      ]
+    },
+    {
+      "statute_id": "452",
+      "name": "House-trespass after preparation for hurt, assault or wrongful restraint.",
+      "status": "evaluated",
+      "score": 0.2857,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "452.1",
+          "text": "Whoever commits house-trespass",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['trespass']",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "452.2",
+          "text": "having made preparation for causing hurt to any person",
+          "element_type": "mens_rea",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "452.3",
+          "text": "having made preparation for assaulting any person",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['force']",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "452.4",
+          "text": "having made preparation for wrongfully restraining any person",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['restraint']",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "452.5",
+          "text": "having made preparation for putting any person in fear of hurt",
+          "element_type": "mens_rea",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "452.6",
+          "text": "having made preparation for putting any person in fear of assault",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['force']",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "452.7",
+          "text": "having made preparation for putting any person in fear of wrongful restraint",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['restraint']",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "2/7 ingredients satisfied with direct facts.",
+        "5 ingredients not satisfied.",
+        "Core [452.2]: Physical injury detected involving Vivek's body (actors: A2)",
+        "Core [452.5]: Physical injury detected involving Vivek's body (actors: A2)"
+      ]
+    },
+    {
+      "statute_id": "307",
+      "name": "Attempt to murder.",
+      "status": "evaluated",
+      "score": 0.25,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "307.1",
+          "text": "Whoever does any act",
+          "element_type": "act",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 17 (char 16)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "307.2",
+          "text": "with such intention or knowledge",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['motive']",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "307.3",
+          "text": "and under such circumstances that, if he by that act caused death, he would be guilty of murder",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "307.4",
+          "text": "if hurt is caused to any person by such act",
+          "element_type": "condition_for_enhanced_punishment",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "307.5",
+          "text": "When any person offending under this section is under sentence of imprisonment for life",
+          "element_type": "condition_for_enhanced_punishment",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting value: line 1 column 31 (char 30)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "307.6",
+          "text": "if hurt is caused (by a life-convict)",
+          "element_type": "condition_for_enhanced_punishment",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "2/6 ingredients satisfied with direct facts.",
+        "4 ingredients not satisfied."
+      ]
+    },
+    {
+      "statute_id": "314",
+      "name": "Death caused by act done with intent to cause miscarriage.",
+      "status": "evaluated",
+      "score": 0.25,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "314.1",
+          "text": "The offender must have the intent to cause the miscarriage of a woman with child.",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['motive', 'pregnancy']",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "314.2",
+          "text": "It is not essential that the offender should know that the act is likely to cause death.",
+          "element_type": "mens_rea_clarification",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Death occurred involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "314.3",
+          "text": "The act is done without the consent of the woman.",
+          "element_type": "aggravating_circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['consent']",
+          "source": "fact_builder"
+        }
+      ],
+      "reasoning": [
+        "1/3 ingredients satisfied with direct facts.",
+        "2 ingredients not satisfied."
+      ]
+    },
+    {
+      "statute_id": "304B",
+      "name": "Dowry death.",
+      "status": "evaluated",
+      "score": 0.125,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "304B.1",
+          "text": "the death of a woman is caused by any burns or bodily injury",
+          "element_type": "causal_circumstance",
+          "status": "satisfied",
+          "confidence": 1.0,
+          "evidence": "Physical injury detected involving Vivek's body (actors: A2)",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "304B.2",
+          "text": "the death of a woman occurs otherwise than under normal circumstances",
+          "element_type": "circumstance",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting ',' delimiter: line 1 column 36 (char 35)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "304B.3",
+          "text": "the death occurs within seven years of her marriage",
+          "element_type": "temporal_condition",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting value: line 1 column 31 (char 30)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "304B.4",
+          "text": "soon before her death she was subjected to cruelty or harassment",
+          "element_type": "conduct",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "304B.5",
+          "text": "cruelty or harassment by her husband",
+          "element_type": "actor",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting value: line 1 column 31 (char 30)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "304B.6",
+          "text": "cruelty or harassment by any relative of her husband",
+          "element_type": "actor",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "304B.7",
+          "text": "cruelty or harassment for, or in connection with, any demand for dowry",
+          "element_type": "motive",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting value: line 1 column 31 (char 30)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "304B.8",
+          "text": "dowry shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961 (28 of 1961)",
+          "element_type": "definition",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        }
+      ],
+      "reasoning": [
+        "1/8 ingredients satisfied with direct facts.",
+        "7 ingredients not satisfied."
+      ]
+    },
+    {
+      "statute_id": "313",
+      "name": "Causing miscarriage without woman's consent.",
+      "status": "rejected",
+      "score": 0.0,
+      "confidence": "none",
+      "ingredient_analysis": [],
+      "reasoning": [
+        "Hard-rejected: statute requires domains ['miscarriage'], but case only has ['bodily_harm', 'general', 'homicide', 'property']."
+      ]
+    },
+    {
+      "statute_id": "355",
+      "name": "Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+      "status": "evaluated",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "355.1",
+          "text": "Whoever assaults or uses criminal force to any person",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "No facts matching required types: ['force']",
+          "source": "fact_builder"
+        },
+        {
+          "ingredient_id": "355.2",
+          "text": "intending thereby to dishonor that person",
+          "element_type": "mens_rea",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "355.3",
+          "text": "otherwise than on grave and sudden provocation given by that person",
+          "element_type": "exception",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting value: line 1 column 31 (char 30)",
+          "source": "llm_fallback_error"
+        }
+      ],
+      "reasoning": [
+        "3 ingredients not satisfied."
+      ]
+    },
+    {
+      "statute_id": "458",
+      "name": "Lurking house-trespass or house-breaking by night after preparation for hurt, assault, or wrongful restraint.",
+      "status": "rejected",
+      "score": 0.0,
+      "confidence": "none",
+      "ingredient_analysis": [],
+      "reasoning": [
+        "Hard-rejected: statute requires domains ['restraint'], but case only has ['bodily_harm', 'general', 'homicide', 'property']."
+      ]
+    },
+    {
+      "statute_id": "306",
+      "name": "Abetment of suicide.",
+      "status": "evaluated",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "306.1",
+          "text": "any person commits suicide",
+          "element_type": "condition",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "306.2",
+          "text": "whoever abets the commission of such suicide",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Unterminated string starting at: line 1 column 18 (char 17)",
+          "source": "llm_fallback_error"
+        }
+      ],
+      "reasoning": [
+        "2 ingredients not satisfied."
+      ]
+    },
+    {
+      "statute_id": "316",
+      "name": "Causing death of quick unborn child by act amounting to culpable homicide.",
+      "status": "evaluated",
+      "score": 0.0,
+      "confidence": "low",
+      "ingredient_analysis": [
+        {
+          "ingredient_id": "316.1",
+          "text": "Whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide",
+          "element_type": "actus_reus",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting value: line 1 column 31 (char 30)",
+          "source": "llm_fallback_error"
+        },
+        {
+          "ingredient_id": "316.2",
+          "text": "and does by such act cause the death of a quick unborn child",
+          "element_type": "causation",
+          "status": "not_satisfied",
+          "confidence": 0.0,
+          "evidence": "LLM fallback failed: Expecting ',' delimiter: line 1 column 36 (char 35)",
+          "source": "llm_fallback_error"
+        }
+      ],
+      "reasoning": [
+        "2 ingredients not satisfied."
+      ]
+    }
+  ],
+  "evaluation_count": 20,
+  "rejected_count": 2,
+  "evaluated_count": 18,
+  "llm_calls_made": 23,
+  "case_facts": [
+    {
+      "type": "dispute",
+      "text": "Dispute between actors involving money (actors: A1, A2)",
+      "source": "E2",
+      "actors": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "type": "last_seen",
+      "text": "Last seen together involving Vivek's car (actors: A1, A2)",
+      "source": "E3",
+      "actors": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "type": "death",
+      "text": "Death occurred involving Vivek's body (actors: A2)",
+      "source": "E5",
+      "actors": [
+        "A2"
+      ]
+    },
+    {
+      "type": "injury",
+      "text": "Physical injury detected involving Vivek's body (actors: A2)",
+      "source": "E6",
+      "actors": [
+        "A2"
+      ]
+    },
+    {
+      "type": "death",
+      "text": "Cause of death indicated involving blunt force injury (actors: A2)",
+      "source": "E6",
+      "actors": [
+        "A2"
+      ]
+    },
+    {
+      "type": "suspicious_behavior",
+      "text": "Unusual behavior observed (actors: A1)",
+      "source": "E7",
+      "actors": [
+        "A1"
+      ]
+    },
+    {
+      "type": "no_explanation",
+      "text": "Absence of explanation (actors: A1)",
+      "source": "E9",
+      "actors": [
+        "A1"
+      ]
+    },
+    {
+      "type": "temporal_gap",
+      "text": "Temporal gap unexplained (actors: A1)",
+      "source": "E9",
+      "actors": [
+        "A1"
+      ]
+    },
+    {
+      "type": "possession",
+      "text": "Possession of property of another involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+      "source": [
+        "E10",
+        "E11"
+      ],
+      "actors": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "type": "possession",
+      "text": "Object recovered linked to actor involving Vivek's wristwatch, Vivek's wallet (actors: A1, A2)",
+      "source": [
+        "E10",
+        "E11"
+      ],
+      "actors": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "type": "property_loss",
+      "text": "Property found abandoned involving Vivek's car (actors: A2)",
+      "source": "E4",
+      "actors": [
+        "A2"
+      ]
+    },
+    {
+      "type": "no_direct_evidence",
+      "text": "Absence of direct evidence",
+      "source": "E12",
+      "actors": []
+    },
+    {
+      "type": "last_seen",
+      "text": "Co presence at location (actors: A1, A2)",
+      "source": "E1",
+      "actors": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "case_domains": [
+    "bodily_harm",
+    "general",
+    "homicide",
+    "property"
+  ],
+  "provenance": {
+    "trace_id": "cd41ff7f-3f9d-4df0-83c0-af7fff088cc4",
+    "tool_name": "evaluate_statute_ingredients_v1",
+    "tool_version": "3.0.0",
+    "model_version": "gemini-2.5-flash",
+    "timestamp": "2026-03-18T08:16:56.837320+00:00",
+    "input_refs": [
+      "cases/case_4267450c0e26/legal_signal_graph.json"
+    ]
+  }
+}

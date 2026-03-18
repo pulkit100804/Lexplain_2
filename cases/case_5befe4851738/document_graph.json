@@ -1,0 +1,42 @@
+{
+  "case_id": "case_5befe4851738",
+  "tenant_id": "local_dev",
+  "nodes": [
+    {
+      "node_id": "n0000",
+      "text": "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+      "page_no": 0,
+      "span": [
+        0,
+        107
+      ]
+    },
+    {
+      "node_id": "n0001",
+      "text": "Ram intentionally tricked the complainant and ran away with the money.",
+      "page_no": 0,
+      "span": [
+        108,
+        178
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from_node": "n0000",
+      "to_node": "n0001",
+      "edge_type": "adjacent"
+    }
+  ],
+  "node_count": 2,
+  "provenance": {
+    "trace_id": "ff1b749e-e964-47f9-903b-7b0dd05e82ff",
+    "tool_name": "extract_sentences_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-17T19:17:54.907319+00:00",
+    "input_refs": [
+      "cases\\case_5befe4851738\\normalized_text.txt"
+    ]
+  }
+}

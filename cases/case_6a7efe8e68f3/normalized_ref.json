@@ -1,0 +1,15 @@
+{
+  "case_id": "case_6a7efe8e68f3",
+  "document_text_ref": "cases\\case_6a7efe8e68f3\\normalized_text.txt",
+  "char_count": 182,
+  "provenance": {
+    "trace_id": "1c66c8c1-725a-4edd-8014-2b65bdbf2ee3",
+    "tool_name": "agent_1_normalize",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-18T07:23:57.447948+00:00",
+    "input_refs": [
+      "cases\\case_6a7efe8e68f3\\raw.txt"
+    ]
+  }
+}

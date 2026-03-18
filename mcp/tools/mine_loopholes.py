@@ -36,13 +36,20 @@ def mine_loopholes_v1(
 
     for evaluation in ingredient_report.get("statute_evaluations", []):
         statute_id = evaluation["statute_id"]
+        # Skip not_applicable statutes — no legal relevance
+        if evaluation.get("status") == "not_applicable":
+            continue
         for ing in evaluation.get("ingredients", []):
-            if ing["status"] == "not_satisfied":
-                missing_evidence.append(f"{statute_id}: ingredient '{ing['ingredient_id']}' not found in case text")
-                recommended_actions.append(f"Gather evidence to establish '{ing['ingredient_id']}' for {statute_id}")
-            elif ing["score"] < _WEAK_THRESHOLD:
-                weak_ingredients.append(f"{statute_id}: ingredient '{ing['ingredient_id']}' score={ing['score']:.2f}")
-                recommended_actions.append(f"Strengthen '{ing['ingredient_id']}' evidence for {statute_id}")
+            final = ing.get("final", {})
+            ing_status = final.get("status", ing.get("status", "not_satisfied"))
+            ing_score = final.get("score", ing.get("score", 0.0))
+            ing_id = ing.get("ingredient_id", "unknown")
+            if ing_status == "not_satisfied":
+                missing_evidence.append(f"{statute_id}: ingredient '{ing_id}' not found in case text")
+                recommended_actions.append(f"Gather evidence to establish '{ing_id}' for {statute_id}")
+            elif ing_score < _WEAK_THRESHOLD:
+                weak_ingredients.append(f"{statute_id}: ingredient '{ing_id}' score={ing_score:.2f}")
+                recommended_actions.append(f"Strengthen '{ing_id}' evidence for {statute_id}")
 
     # Check for contradictory nodes (nodes with conflicting role tags)
     nodes = role_tagged.get("nodes", [])

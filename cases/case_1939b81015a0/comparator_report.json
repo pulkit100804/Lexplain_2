@@ -1,0 +1,19 @@
+{
+  "case_id": "case_1939b81015a0",
+  "tenant_id": "local_dev",
+  "prosecution_viability": 0.192,
+  "defense_viability": 0.843,
+  "precedent_comparisons": [],
+  "note": "Viability computed from ingredient satisfaction aggregate (no precedents in prototype).",
+  "provenance": {
+    "trace_id": "06ab91d3-26b1-461d-b6b6-3b8ff70304bc",
+    "tool_name": "compare_precedents_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-17T18:40:25.797876+00:00",
+    "input_refs": [
+      "cases\\case_1939b81015a0\\ingredient_report.json",
+      "cases\\case_1939b81015a0\\precedent_matches.json"
+    ]
+  }
+}

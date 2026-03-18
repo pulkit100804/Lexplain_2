@@ -1,0 +1,43 @@
+{
+  "case_id": "case_d8a458683f61",
+  "tenant_id": "local_dev",
+  "role_requested": "both",
+  "llm_used": false,
+  "arguments": [
+    {
+      "id": "P1",
+      "title": "Prima facie case under 417",
+      "text": "The facts disclose a prima facie case under 417. The following ingredients are satisfied: see evidence.",
+      "supporting_node_ids": [],
+      "precedent_ids": [],
+      "confidence": 0.0
+    },
+    {
+      "id": "D1",
+      "title": "Incomplete proof of essential ingredients",
+      "text": "The prosecution has not established all essential ingredients. The following are absent or weak: 417.1.",
+      "supporting_node_ids": [],
+      "precedent_ids": [],
+      "confidence": 1.0
+    }
+  ],
+  "viability_assessment": {
+    "prosecution_viability": 0.017,
+    "defense_viability": 0.986,
+    "note": "Template-based analysis"
+  },
+  "raw_llm_text": null,
+  "provenance": {
+    "trace_id": "fb937b74-b5b3-4459-bce5-31289bf8a669",
+    "tool_name": "generate_argument_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-17T20:17:30.303279+00:00",
+    "input_refs": [
+      "cases\\case_d8a458683f61\\fact_event_graph.json",
+      "cases\\case_d8a458683f61\\ingredient_report.json",
+      "cases\\case_d8a458683f61\\loophole_map.json",
+      "cases\\case_d8a458683f61\\comparator_report.json"
+    ]
+  }
+}

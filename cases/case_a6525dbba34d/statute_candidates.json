@@ -1,0 +1,224 @@
+{
+  "case_id": "case_a6525dbba34d",
+  "tenant_id": "local_dev",
+  "candidates": [
+    {
+      "statute_id": "417",
+      "name": "Punishment for cheating.",
+      "matched_terms": [
+        "cheat"
+      ],
+      "score": 0.1988,
+      "final": {
+        "score": 0.1988,
+        "source": "deterministic",
+        "rank": 1
+      }
+    },
+    {
+      "statute_id": "209",
+      "name": "Dishonestly making false claim in Court.",
+      "matched_terms": [
+        "false",
+        "mak"
+      ],
+      "score": 0.1294,
+      "final": {
+        "score": 0.1294,
+        "source": "deterministic",
+        "rank": 2
+      }
+    },
+    {
+      "statute_id": "414",
+      "name": "Assisting in concealment of stolen property.",
+      "matched_terms": [
+        "away",
+        "mak"
+      ],
+      "score": 0.1293,
+      "final": {
+        "score": 0.1293,
+        "source": "deterministic",
+        "rank": 3
+      }
+    },
+    {
+      "statute_id": "266",
+      "name": "Being In possession of false weight or measure.",
+      "matched_terms": [
+        "accus",
+        "false"
+      ],
+      "score": 0.122,
+      "final": {
+        "score": 0.122,
+        "source": "deterministic",
+        "rank": 4
+      }
+    },
+    {
+      "statute_id": "399",
+      "name": "Making preparation to commit dacoity.",
+      "matched_terms": [
+        "mak"
+      ],
+      "score": 0.1179,
+      "final": {
+        "score": 0.1179,
+        "source": "deterministic",
+        "rank": 5
+      }
+    },
+    {
+      "statute_id": "257",
+      "name": "Making or selling instrument for counterfeiting Government stamp.",
+      "matched_terms": [
+        "accus",
+        "mak"
+      ],
+      "score": 0.0977,
+      "final": {
+        "score": 0.0977,
+        "source": "deterministic",
+        "rank": 6
+      }
+    },
+    {
+      "statute_id": "267",
+      "name": "Making or selling false weight or measure.",
+      "matched_terms": [
+        "false",
+        "mak"
+      ],
+      "score": 0.0943,
+      "final": {
+        "score": 0.0943,
+        "source": "deterministic",
+        "rank": 7
+      }
+    },
+    {
+      "statute_id": "488",
+      "name": "Punishment for making use of any such false mark.",
+      "matched_terms": [
+        "false",
+        "mak"
+      ],
+      "score": 0.09,
+      "final": {
+        "score": 0.09,
+        "source": "deterministic",
+        "rank": 8
+      }
+    },
+    {
+      "statute_id": "470",
+      "name": "Forged document.",
+      "matched_terms": [
+        "false"
+      ],
+      "score": 0.0894,
+      "final": {
+        "score": 0.0894,
+        "source": "deterministic",
+        "rank": 9
+      }
+    },
+    {
+      "statute_id": "182",
+      "name": "False information, with intent to cause public servant to use his lawful power to the injury of another person.",
+      "matched_terms": [
+        "accus",
+        "false",
+        "him"
+      ],
+      "score": 0.0867,
+      "final": {
+        "score": 0.0867,
+        "source": "deterministic",
+        "rank": 10
+      }
+    },
+    {
+      "statute_id": "472",
+      "name": "Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 467.",
+      "matched_terms": [
+        "accus",
+        "mak"
+      ],
+      "score": 0.0845,
+      "final": {
+        "score": 0.0845,
+        "source": "deterministic",
+        "rank": 11
+      }
+    },
+    {
+      "statute_id": "174",
+      "name": "Non-attendance in obedience to an order from public servant.",
+      "matched_terms": [
+        "accus",
+        "him",
+        "intentionally"
+      ],
+      "score": 0.083,
+      "final": {
+        "score": 0.083,
+        "source": "deterministic",
+        "rank": 12
+      }
+    },
+    {
+      "statute_id": "260",
+      "name": "Using as genuine a Government stamp known to be counterfeit.",
+      "matched_terms": [
+        "accus"
+      ],
+      "score": 0.0816,
+      "final": {
+        "score": 0.0816,
+        "source": "deterministic",
+        "rank": 13
+      }
+    },
+    {
+      "statute_id": "504",
+      "name": "Intentional insult with intent to provoke breach of the peace.",
+      "matched_terms": [
+        "accus",
+        "intentionally"
+      ],
+      "score": 0.0808,
+      "final": {
+        "score": 0.0808,
+        "source": "deterministic",
+        "rank": 14
+      }
+    },
+    {
+      "statute_id": "184",
+      "name": "Obstructing sale of property offered for sale by authority of public servant.",
+      "matched_terms": [
+        "intentionally"
+      ],
+      "score": 0.0804,
+      "final": {
+        "score": 0.0804,
+        "source": "deterministic",
+        "rank": 15
+      }
+    }
+  ],
+  "candidate_count": 15,
+  "provenance": {
+    "trace_id": "24468869-335d-430a-9a39-76b239fb8df5",
+    "tool_name": "identify_statutes_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-18T04:38:20.631753+00:00",
+    "input_refs": [
+      "cases\\case_a6525dbba34d\\fact_event_graph.json"
+    ]
+  }
+}

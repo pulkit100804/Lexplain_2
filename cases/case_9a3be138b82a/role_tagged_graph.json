@@ -1,0 +1,64 @@
+{
+  "case_id": "case_9a3be138b82a",
+  "tenant_id": "local_dev",
+  "nodes": [
+    {
+      "node_id": "n0000",
+      "text": "Arjun and Vivek were seen drinking near the lake.",
+      "page_no": 0,
+      "span": [
+        0,
+        49
+      ],
+      "role_tag": "unclassified",
+      "confidence": 0.5,
+      "matched_keyword": null
+    },
+    {
+      "node_id": "n0001",
+      "text": "Vivek's body was found the next day with blunt force trauma.",
+      "page_no": 0,
+      "span": [
+        50,
+        110
+      ],
+      "role_tag": "finding",
+      "confidence": 0.9,
+      "matched_keyword": "found"
+    },
+    {
+      "node_id": "n0002",
+      "text": "Arjun was found with Vivek's watch and could not explain why he had it.",
+      "page_no": 0,
+      "span": [
+        111,
+        182
+      ],
+      "role_tag": "finding",
+      "confidence": 0.9,
+      "matched_keyword": "found"
+    }
+  ],
+  "edges": [
+    {
+      "from_node": "n0000",
+      "to_node": "n0001",
+      "edge_type": "adjacent"
+    },
+    {
+      "from_node": "n0001",
+      "to_node": "n0002",
+      "edge_type": "adjacent"
+    }
+  ],
+  "provenance": {
+    "trace_id": "05eabff1-ff3d-4b90-97ab-c1934c7c0f6f",
+    "tool_name": "tag_legal_roles_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-18T07:00:04.506916+00:00",
+    "input_refs": [
+      "cases\\case_9a3be138b82a\\document_graph.json"
+    ]
+  }
+}

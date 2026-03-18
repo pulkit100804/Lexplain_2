@@ -1,0 +1,21 @@
+{
+  "case_id": "case_47b01a5386ab",
+  "tenant_id": "local_dev",
+  "statute_evaluations": [],
+  "evaluation_count": 0,
+  "rejected_count": 0,
+  "evaluated_count": 0,
+  "llm_calls_made": 0,
+  "case_facts": [],
+  "case_domains": [],
+  "provenance": {
+    "trace_id": "60fa8251-0577-4ba1-a145-c9083a2f0107",
+    "tool_name": "evaluate_statute_ingredients_v1",
+    "tool_version": "3.0.0",
+    "model_version": "gemini-2.5-flash",
+    "timestamp": "2026-03-18T08:14:12.816976+00:00",
+    "input_refs": [
+      "cases\\case_47b01a5386ab\\legal_signal_graph.json"
+    ]
+  }
+}

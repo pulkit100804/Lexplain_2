@@ -1,0 +1,476 @@
+{
+  "case_id": "case_e5fc15bf3425",
+  "tenant_id": "local_dev",
+  "candidates": [
+    {
+      "statute_id": "417",
+      "name": "Punishment for cheating.",
+      "deterministic": {
+        "score": 0.2412,
+        "matched_terms": [
+          "cheat",
+          "deceive",
+          "defraud",
+          "fraud",
+          "misrepresent",
+          "swindle"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.2412,
+        "source": "deterministic",
+        "rank": 1
+      }
+    },
+    {
+      "statute_id": "95",
+      "name": "Act causing slight harm.",
+      "deterministic": {
+        "score": 0.2307,
+        "matched_terms": [],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.2307,
+        "source": "deterministic",
+        "rank": 2
+      }
+    },
+    {
+      "statute_id": "419",
+      "name": "Punishment for cheating by personation.",
+      "deterministic": {
+        "score": 0.2276,
+        "matched_terms": [
+          "cheat",
+          "deceive",
+          "defraud",
+          "fraud",
+          "misrepresent",
+          "swindle"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.2276,
+        "source": "deterministic",
+        "rank": 3
+      }
+    },
+    {
+      "statute_id": "468",
+      "name": "Forgery for purpose of cheating.",
+      "deterministic": {
+        "score": 0.2142,
+        "matched_terms": [
+          "cheat",
+          "deceive",
+          "defraud",
+          "fraud",
+          "misrepresent",
+          "swindle"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.2142,
+        "source": "deterministic",
+        "rank": 4
+      }
+    },
+    {
+      "statute_id": "482",
+      "name": "Punishment for using a false property mark.",
+      "deterministic": {
+        "score": 0.1997,
+        "matched_terms": [
+          "defraud",
+          "false"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1997,
+        "source": "deterministic",
+        "rank": 5
+      }
+    },
+    {
+      "statute_id": "414",
+      "name": "Assisting in concealment of stolen property.",
+      "deterministic": {
+        "score": 0.1939,
+        "matched_terms": [
+          "away",
+          "mak"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1939,
+        "source": "deterministic",
+        "rank": 6
+      }
+    },
+    {
+      "statute_id": "498",
+      "name": "Enticing or taking away or detaining with criminal intent a married woman.",
+      "deterministic": {
+        "score": 0.1875,
+        "matched_terms": [
+          "accus",
+          "away"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1875,
+        "source": "deterministic",
+        "rank": 7
+      }
+    },
+    {
+      "statute_id": "7",
+      "name": "Sense of expression once explained.",
+      "deterministic": {
+        "score": 0.1866,
+        "matched_terms": [],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1866,
+        "source": "deterministic",
+        "rank": 8
+      }
+    },
+    {
+      "statute_id": "209",
+      "name": "Dishonestly making false claim in Court.",
+      "deterministic": {
+        "score": 0.1853,
+        "matched_terms": [
+          "false",
+          "mak"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1853,
+        "source": "deterministic",
+        "rank": 9
+      }
+    },
+    {
+      "statute_id": "266",
+      "name": "Being In possession of false weight or measure.",
+      "deterministic": {
+        "score": 0.1848,
+        "matched_terms": [
+          "accus",
+          "false"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1848,
+        "source": "deterministic",
+        "rank": 10
+      }
+    },
+    {
+      "statute_id": "37",
+      "name": "Co-operation by doing one of several acts constituting an offence.",
+      "deterministic": {
+        "score": 0.1834,
+        "matched_terms": [
+          "intentionally"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1834,
+        "source": "deterministic",
+        "rank": 11
+      }
+    },
+    {
+      "statute_id": "202",
+      "name": "Intentional omission to give information of offence by person bound to inform.",
+      "deterministic": {
+        "score": 0.1816,
+        "matched_terms": [
+          "intentionally"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1816,
+        "source": "deterministic",
+        "rank": 12
+      }
+    },
+    {
+      "statute_id": "250",
+      "name": "Delivery of coin, possessed with knowledge that it is altered.",
+      "deterministic": {
+        "score": 0.1805,
+        "matched_terms": [
+          "accus",
+          "cheat",
+          "deceive",
+          "defraud",
+          "fraud",
+          "misrepresent"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1805,
+        "source": "deterministic",
+        "rank": 13
+      }
+    },
+    {
+      "statute_id": "267",
+      "name": "Making or selling false weight or measure.",
+      "deterministic": {
+        "score": 0.1787,
+        "matched_terms": [
+          "false",
+          "mak"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1787,
+        "source": "deterministic",
+        "rank": 14
+      }
+    },
+    {
+      "statute_id": "488",
+      "name": "Punishment for making use of any such false mark.",
+      "deterministic": {
+        "score": 0.1772,
+        "matched_terms": [
+          "defraud",
+          "false",
+          "mak"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1772,
+        "source": "deterministic",
+        "rank": 15
+      }
+    },
+    {
+      "statute_id": "489",
+      "name": "Tampering with property mark with intent to cause injury.",
+      "deterministic": {
+        "score": 0.1767,
+        "matched_terms": [
+          "accus"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1767,
+        "source": "deterministic",
+        "rank": 16
+      }
+    },
+    {
+      "statute_id": "504",
+      "name": "Intentional insult with intent to provoke breach of the peace.",
+      "deterministic": {
+        "score": 0.1767,
+        "matched_terms": [
+          "accus",
+          "intentionally"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1767,
+        "source": "deterministic",
+        "rank": 17
+      }
+    },
+    {
+      "statute_id": "463",
+      "name": "Forgery.",
+      "deterministic": {
+        "score": 0.1763,
+        "matched_terms": [
+          "cheat",
+          "deceive",
+          "defraud",
+          "false",
+          "fraud",
+          "misrepresent"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1763,
+        "source": "deterministic",
+        "rank": 18
+      }
+    },
+    {
+      "statute_id": "418",
+      "name": "Cheating with knowledge that wrongful loss may ensue to person whose interest offender is bound to protect.",
+      "deterministic": {
+        "score": 0.1761,
+        "matched_terms": [
+          "cheat",
+          "deceive",
+          "defraud",
+          "fraud",
+          "misrepresent",
+          "swindle"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1761,
+        "source": "deterministic",
+        "rank": 19
+      }
+    },
+    {
+      "statute_id": "487",
+      "name": "Making a false mark upon any receptacle containing goods.",
+      "deterministic": {
+        "score": 0.1757,
+        "matched_terms": [
+          "accus",
+          "deceive",
+          "defraud",
+          "false",
+          "mak"
+        ],
+        "method": "tfidf+ngrams+fuzzy"
+      },
+      "llm": {
+        "score": 0.0,
+        "rationale": "",
+        "status": "skipped"
+      },
+      "final": {
+        "score": 0.1757,
+        "source": "deterministic",
+        "rank": 20
+      }
+    }
+  ],
+  "candidate_count": 20,
+  "provenance": {
+    "trace_id": "8f9727de-b558-4141-a5a7-c71c8cbbe8b1",
+    "tool_name": "identify_statutes_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-17T18:40:00.539795+00:00",
+    "input_refs": [
+      "cases\\case_e5fc15bf3425\\fact_event_graph.json"
+    ]
+  }
+}

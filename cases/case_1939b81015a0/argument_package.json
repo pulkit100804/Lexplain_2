@@ -1,0 +1,51 @@
+{
+  "case_id": "case_1939b81015a0",
+  "tenant_id": "local_dev",
+  "role_requested": "both",
+  "llm_used": false,
+  "arguments": [
+    {
+      "id": "P1",
+      "title": "Prima facie case under 417, 95, 419",
+      "text": "The facts disclose a prima facie case under 417, 95, 419, 468, 482, 414, 498, 7, 209, 266, 37, 202, 250, 267, 488, 489, 504, 463, 418, 487. The following ingredients are satisfied: see evidence.",
+      "supporting_node_ids": [],
+      "precedent_ids": [],
+      "confidence": 0.0
+    },
+    {
+      "id": "D1",
+      "title": "Incomplete proof of essential ingredients",
+      "text": "The prosecution has not established all essential ingredients. The following are absent or weak: 417.1, 95.1, 95.2, 419_kw, 468.1.",
+      "supporting_node_ids": [],
+      "precedent_ids": [],
+      "confidence": 1.0
+    },
+    {
+      "id": "D2",
+      "title": "Missing evidence critical to prosecution case",
+      "text": "Critical evidentiary gaps exist: 417: ingredient '417.1' not found in case text; 95: ingredient '95.1' not found in case text; 95: ingredient '95.2' not found in case text",
+      "supporting_node_ids": [],
+      "precedent_ids": [],
+      "confidence": 0.7
+    }
+  ],
+  "viability_assessment": {
+    "prosecution_viability": 0.192,
+    "defense_viability": 0.843,
+    "note": "Template fallback (Gemini unavailable or GEMINI_API_KEY not set)"
+  },
+  "raw_gemini_text": null,
+  "provenance": {
+    "trace_id": "5caf6321-1043-4d44-b791-3fe5e0f8296a",
+    "tool_name": "generate_argument_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-17T18:40:25.802658+00:00",
+    "input_refs": [
+      "cases\\case_1939b81015a0\\fact_event_graph.json",
+      "cases\\case_1939b81015a0\\ingredient_report.json",
+      "cases\\case_1939b81015a0\\loophole_map.json",
+      "cases\\case_1939b81015a0\\comparator_report.json"
+    ]
+  }
+}

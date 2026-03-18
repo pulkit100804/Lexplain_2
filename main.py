@@ -28,8 +28,8 @@ import agents.agent_1_normalize as agent_1
 import agents.agent_2_segmentation as agent_2
 import agents.agent_3_role_tagging as agent_3
 import agents.agent_4_fact_graph as agent_4
-import agents.agent_5_statute_candidates as agent_5
-import agents.agent_6_ingredient_engine as agent_6
+import agents.agent_5_signal_extractor as agent_5
+import agents.agent_6_statute_evaluator as agent_6
 import agents.agent_7_retrieval as agent_7
 import agents.agent_8_comparator as agent_8
 import agents.agent_9_loophole_miner as agent_9

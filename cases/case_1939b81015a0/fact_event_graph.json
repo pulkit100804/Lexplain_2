@@ -1,0 +1,71 @@
+{
+  "case_id": "case_1939b81015a0",
+  "tenant_id": "local_dev",
+  "nodes": [
+    {
+      "node_id": "n0000",
+      "text": "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+      "page_no": 0,
+      "span": [
+        0,
+        107
+      ],
+      "role_tag": "allegation",
+      "confidence": 0.9,
+      "matched_keyword": "alleged"
+    },
+    {
+      "node_id": "n0001",
+      "text": "Ram intentionally tricked the complainant and ran away with the money.",
+      "page_no": 0,
+      "span": [
+        108,
+        178
+      ],
+      "role_tag": "evidence",
+      "confidence": 0.9,
+      "matched_keyword": "complainant"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "evt_8bca01d5",
+      "node_ids": [
+        "n0000"
+      ],
+      "event_type": "cheated",
+      "actors": [
+        "accused",
+        "complainant"
+      ],
+      "objects": [],
+      "dates": []
+    },
+    {
+      "event_id": "evt_2b58b1ad",
+      "node_ids": [
+        "n0001"
+      ],
+      "event_type": "mentioned",
+      "actors": [
+        "complainant"
+      ],
+      "objects": [],
+      "dates": []
+    }
+  ],
+  "actors": [
+    "complainant",
+    "accused"
+  ],
+  "provenance": {
+    "trace_id": "f95b5ad6-f29e-4132-ba8b-3ffe901dd306",
+    "tool_name": "build_fact_graph_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-17T18:40:23.962847+00:00",
+    "input_refs": [
+      "cases\\case_1939b81015a0\\role_tagged_graph.json"
+    ]
+  }
+}

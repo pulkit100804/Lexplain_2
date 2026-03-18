@@ -1,0 +1,16 @@
+{
+  "case_id": "case_a9be4c0bd15e",
+  "tenant_id": "local_dev",
+  "statute_evaluations": [],
+  "evaluation_count": 0,
+  "provenance": {
+    "trace_id": "b1a8ebf9-7c2c-43e9-8ecb-e6b04183bc57",
+    "tool_name": "evaluate_statute_ingredients_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-18T05:57:23.737002+00:00",
+    "input_refs": [
+      "cases\\case_a9be4c0bd15e\\legal_signal_graph.json"
+    ]
+  }
+}

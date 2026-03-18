@@ -1,0 +1,1626 @@
+{
+  "case_id": "case_1939b81015a0",
+  "tenant_id": "local_dev",
+  "statute_evaluations": [
+    {
+      "statute_id": "417",
+      "name": "Punishment for cheating.",
+      "ingredients": [
+        {
+          "ingredient_id": "417.1",
+          "ingredient_text": "Whoever cheats",
+          "element_type": "act",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2165,
+            "matched_terms": [
+              "cheat",
+              "deceive",
+              "defraud",
+              "fraud",
+              "misrepresent",
+              "swindle"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2165,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.2165
+    },
+    {
+      "statute_id": "95",
+      "name": "Act causing slight harm.",
+      "ingredients": [
+        {
+          "ingredient_id": "95.1",
+          "ingredient_text": "The act causes harm, or is intended to cause harm, or is known to be likely to cause harm.",
+          "element_type": "condition",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1574,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1574,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "95.2",
+          "ingredient_text": "No person of ordinary sense and temper would complain of such harm.",
+          "element_type": "condition",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1885,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1885,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1729
+    },
+    {
+      "statute_id": "419",
+      "name": "Punishment for cheating by personation.",
+      "ingredients": [
+        {
+          "ingredient_id": "419_kw",
+          "ingredient_text": "cheat deceive defraud fraud misrepresent swindle",
+          "element_type": "keyword_proxy",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.176,
+            "matched_terms": [
+              "cheat",
+              "deceive",
+              "defraud",
+              "fraud",
+              "misrepresent",
+              "swindle"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.176,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.176
+    },
+    {
+      "statute_id": "468",
+      "name": "Forgery for purpose of cheating.",
+      "ingredients": [
+        {
+          "ingredient_id": "468.1",
+          "ingredient_text": "Whoever commits forgery",
+          "element_type": "act",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0758,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0758,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "468.2",
+          "ingredient_text": "intending that the document or electronic record forged shall be used for the purpose of cheating",
+          "element_type": "intent",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2938,
+            "matched_terms": [
+              "cheat",
+              "deceive",
+              "defraud",
+              "fraud",
+              "misrepresent",
+              "swindle"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2938,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1848
+    },
+    {
+      "statute_id": "482",
+      "name": "Punishment for using a false property mark.",
+      "ingredients": [
+        {
+          "ingredient_id": "482.1",
+          "ingredient_text": "A person uses any false property mark.",
+          "element_type": "act",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1954,
+            "matched_terms": [
+              "false"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1954,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1954
+    },
+    {
+      "statute_id": "414",
+      "name": "Assisting in concealment of stolen property.",
+      "ingredients": [
+        {
+          "ingredient_id": "414.1",
+          "ingredient_text": "Whoever voluntarily assists",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0641,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0641,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "414.2",
+          "ingredient_text": "in concealing or disposing of or making away with property",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2222,
+            "matched_terms": [
+              "away",
+              "mak"
+            ],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2222,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "414.3",
+          "ingredient_text": "which he knows or has reason to believe",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0583,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0583,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "414.4",
+          "ingredient_text": "to be stolen property",
+          "element_type": "object_of_crime",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1014,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1014,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1115
+    },
+    {
+      "statute_id": "498",
+      "name": "Enticing or taking away or detaining with criminal intent a married woman.",
+      "ingredients": [
+        {
+          "ingredient_id": "498.1",
+          "ingredient_text": "The accused takes or entices away a woman.",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2133,
+            "matched_terms": [
+              "accus",
+              "away"
+            ],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2133,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "498.2",
+          "ingredient_text": "The accused conceals or detains a woman.",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1758,
+            "matched_terms": [
+              "accus"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1758,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "498.3",
+          "ingredient_text": "The woman is the wife of another man.",
+          "element_type": "circumstance",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1173,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1173,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "498.4",
+          "ingredient_text": "The accused knows or has reason to believe the woman is the wife of another man.",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1976,
+            "matched_terms": [
+              "accus"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1976,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.176
+    },
+    {
+      "statute_id": "7",
+      "name": "Sense of expression once explained.",
+      "ingredients": [
+        {
+          "ingredient_id": "7.1",
+          "ingredient_text": "An expression is explained in any part of this Code",
+          "element_type": "condition",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1327,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1327,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "7.2",
+          "ingredient_text": "The explained expression is used in every part of this Code",
+          "element_type": "condition",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.151,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.151,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1419
+    },
+    {
+      "statute_id": "209",
+      "name": "Dishonestly making false claim in Court.",
+      "ingredients": [
+        {
+          "ingredient_id": "209.1",
+          "ingredient_text": "Whoever fraudulently",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0565,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0565,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.2",
+          "ingredient_text": "or dishonestly",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.039,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.039,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.3",
+          "ingredient_text": "or with intent to injure any person",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1407,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1407,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.4",
+          "ingredient_text": "or with intent to annoy any person",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1329,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1329,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.5",
+          "ingredient_text": "makes in a Court of Justice",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0796,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0796,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.6",
+          "ingredient_text": "any claim",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0379,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0379,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "209.7",
+          "ingredient_text": "which he knows to be false",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0726,
+            "matched_terms": [
+              "false"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0726,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.0799
+    },
+    {
+      "statute_id": "266",
+      "name": "Being In possession of false weight or measure.",
+      "ingredients": [
+        {
+          "ingredient_id": "266.1",
+          "ingredient_text": "The accused is in possession of an instrument for weighing, a weight, or a measure of length or capacity.",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1952,
+            "matched_terms": [
+              "accus"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1952,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "266.2",
+          "ingredient_text": "The accused knows the instrument, weight, or measure to be false.",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2027,
+            "matched_terms": [
+              "accus",
+              "false"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2027,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.199
+    },
+    {
+      "statute_id": "37",
+      "name": "Co-operation by doing one of several acts constituting an offence.",
+      "ingredients": [
+        {
+          "ingredient_id": "37.1",
+          "ingredient_text": "an offence is committed by means of several acts",
+          "element_type": "act",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1533,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1533,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "37.2",
+          "ingredient_text": "whoever intentionally co-operates in the commission of that offence",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2935,
+            "matched_terms": [
+              "intentionally"
+            ],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2935,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "37.3",
+          "ingredient_text": "by doing any one of those acts",
+          "element_type": "act",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0935,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0935,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "37.4",
+          "ingredient_text": "either singly or jointly with any other person",
+          "element_type": "circumstance",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1299,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1299,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1675
+    },
+    {
+      "statute_id": "202",
+      "name": "Intentional omission to give information of offence by person bound to inform.",
+      "ingredients": [
+        {
+          "ingredient_id": "202.1",
+          "ingredient_text": "Whoever knows or has reason to believe that an offence has been committed.",
+          "element_type": "mental_state",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1497,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1497,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "202.2",
+          "ingredient_text": "Intentionally omits to give any information respecting that offence.",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2302,
+            "matched_terms": [
+              "intentionally"
+            ],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2302,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.19
+    },
+    {
+      "statute_id": "250",
+      "name": "Delivery of coin, possessed with knowledge that it is altered.",
+      "ingredients": [
+        {
+          "ingredient_id": "250.1",
+          "ingredient_text": "An offence defined in section 246 or 248 has been committed with respect to the coin.",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1982,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1982,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "250.2",
+          "ingredient_text": "The accused acts fraudulently or with intent that fraud may be committed.",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.3266,
+            "matched_terms": [
+              "accus",
+              "cheat",
+              "deceive",
+              "defraud",
+              "fraud",
+              "misrepresent"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.3266,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "250.3",
+          "ingredient_text": "The accused delivers such coin to any other person.",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2075,
+            "matched_terms": [
+              "accus"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2075,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "250.4",
+          "ingredient_text": "The accused attempts to induce any other person to receive the same coin.",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1981,
+            "matched_terms": [
+              "accus"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1981,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.2326
+    },
+    {
+      "statute_id": "267",
+      "name": "Making or selling false weight or measure.",
+      "ingredients": [
+        {
+          "ingredient_id": "267.1",
+          "ingredient_text": "Whoever makes, sells or disposes of any instrument for weighing, or any weight, or any measure of length or capacity",
+          "element_type": "act",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1521,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1521,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "267.2",
+          "ingredient_text": "which he knows to be false",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0726,
+            "matched_terms": [
+              "false"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0726,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "267.3",
+          "ingredient_text": "in order that the same may be used as true, or knowing that the same is likely to be used as true",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1695,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1695,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1314
+    },
+    {
+      "statute_id": "488",
+      "name": "Punishment for making use of any such false mark.",
+      "ingredients": [
+        {
+          "ingredient_id": "488.1",
+          "ingredient_text": "The use is in any manner prohibited by the last foregoing section.",
+          "element_type": "condition",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1712,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1712,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1712
+    },
+    {
+      "statute_id": "489",
+      "name": "Tampering with property mark with intent to cause injury.",
+      "ingredients": [
+        {
+          "ingredient_id": "489.1",
+          "ingredient_text": "The accused knows it to be likely that he may thereby cause injury to any person",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2177,
+            "matched_terms": [
+              "accus"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2177,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.2177
+    },
+    {
+      "statute_id": "504",
+      "name": "Intentional insult with intent to provoke breach of the peace.",
+      "ingredients": [
+        {
+          "ingredient_id": "504.1",
+          "ingredient_text": "The insult gives provocation to that person.",
+          "element_type": "act",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1304,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1304,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "504.2",
+          "ingredient_text": "The accused intends or knows it to be likely that such provocation will cause the person to break the public peace.",
+          "element_type": "intent",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2305,
+            "matched_terms": [
+              "accus"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2305,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "504.3",
+          "ingredient_text": "The accused intends or knows it to be likely that such provocation will cause the person to commit any other offence.",
+          "element_type": "intent",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2553,
+            "matched_terms": [
+              "accus"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2553,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.2054
+    },
+    {
+      "statute_id": "463",
+      "name": "Forgery.",
+      "ingredients": [
+        {
+          "ingredient_id": "463.1",
+          "ingredient_text": "Whoever makes any false document or false electronic record or part of a document or electronic record",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1925,
+            "matched_terms": [
+              "false"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1925,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "463.2",
+          "ingredient_text": "with intent to cause damage or injury to the public or to any person",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1749,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1749,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "463.3",
+          "ingredient_text": "or to support any claim or title",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0859,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0859,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "463.4",
+          "ingredient_text": "or to cause any person to part with property",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1442,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1442,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "463.5",
+          "ingredient_text": "or to enter into any express or implied contract",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1035,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1035,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "463.6",
+          "ingredient_text": "or with intent to commit fraud or that fraud may be committed",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2697,
+            "matched_terms": [
+              "cheat",
+              "deceive",
+              "defraud",
+              "fraud",
+              "misrepresent"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2697,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1618
+    },
+    {
+      "statute_id": "418",
+      "name": "Cheating with knowledge that wrongful loss may ensue to person whose interest offender is bound to protect.",
+      "ingredients": [
+        {
+          "ingredient_id": "418.1",
+          "ingredient_text": "Whoever cheats",
+          "element_type": "act",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2038,
+            "matched_terms": [
+              "cheat",
+              "deceive",
+              "defraud",
+              "fraud",
+              "misrepresent",
+              "swindle"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2038,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "418.2",
+          "ingredient_text": "with the knowledge that he is likely thereby to cause wrongful loss",
+          "element_type": "mens_rea",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1823,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1823,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "418.3",
+          "ingredient_text": "to a person whose interest in the transaction to which the cheating relates",
+          "element_type": "victim",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.2735,
+            "matched_terms": [
+              "cheat",
+              "deceive",
+              "defraud",
+              "fraud",
+              "misrepresent",
+              "swindle"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.2735,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "418.4",
+          "ingredient_text": "he was bound, either by law, or by a legal contract, to protect",
+          "element_type": "circumstance",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1192,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1192,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1947
+    },
+    {
+      "statute_id": "487",
+      "name": "Making a false mark upon any receptacle containing goods.",
+      "ingredients": [
+        {
+          "ingredient_id": "487.1",
+          "ingredient_text": "Whoever makes any false mark upon any case, package or other receptacle containing goods",
+          "element_type": "actus_reus",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.175,
+            "matched_terms": [
+              "false"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.175,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "487.2",
+          "ingredient_text": "in a manner reasonably calculated to cause any public servant or any other person to believe",
+          "element_type": "circumstance_of_deception",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1655,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1655,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "487.3",
+          "ingredient_text": "that such receptacle contains goods which it does not contain",
+          "element_type": "deception_target",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1091,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1091,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "487.4",
+          "ingredient_text": "or that it does not contain goods which it does contain",
+          "element_type": "deception_target",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.0931,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.0931,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "487.5",
+          "ingredient_text": "or that the goods contained in such receptacle are of a nature or quality different from the real nature or quality thereof",
+          "element_type": "deception_target",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.1869,
+            "matched_terms": [],
+            "evidence_snippets": [
+              "Ram intentionally tricked the complainant and ran away with the money.",
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.1869,
+            "source": "deterministic"
+          }
+        },
+        {
+          "ingredient_id": "487.6",
+          "ingredient_text": "unless he proves that he acted without intent to defraud",
+          "element_type": "defense",
+          "deterministic": {
+            "status": "not_satisfied",
+            "score": 0.208,
+            "matched_terms": [
+              "defraud"
+            ],
+            "evidence_snippets": [
+              "The complainant alleged that the accused Ram cheated him of Rs 50,000 by making false promises about a job.",
+              "Ram intentionally tricked the complainant and ran away with the money."
+            ]
+          },
+          "llm": {
+            "status": "failed",
+            "match": {}
+          },
+          "final": {
+            "status": "not_satisfied",
+            "score": 0.208,
+            "source": "deterministic"
+          }
+        }
+      ],
+      "overall_score": 0.1563
+    }
+  ],
+  "provenance": {
+    "trace_id": "f3a198df-7dcc-4226-a3d5-b67af2263316",
+    "tool_name": "evaluate_ingredients_v1",
+    "tool_version": "1.0.0",
+    "model_version": null,
+    "timestamp": "2026-03-17T18:40:25.790063+00:00",
+    "input_refs": [
+      "cases\\case_1939b81015a0\\statute_candidates.json",
+      "cases\\case_1939b81015a0\\fact_event_graph.json"
+    ]
+  }
+}
